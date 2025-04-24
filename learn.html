@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Materials - Affective Computing NPTEL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <button id="backBtn" class="back-arrow" aria-label="Go back to home page">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/>
+            </svg>
+        </button>
+        
+        <header class="home-header">
+            <div class="header-content">
+                <h1>Learning Materials</h1>
+                <div class="title-accent"></div>
+                <h2 class="title-subtitle">Affective Computing</h2>
+            </div>
+        </header>
+        
+        <main>
+            <div class="week-selection">
+                <p class="description">Choose a week to study:</p>
+                <div class="week-list">
+                    <button class="week-btn" data-week="1">
+                        <span class="week-number">Week 1</span>
+                        <span class="week-title">Fundamentals of Affective Computing</span>
+                    </button>
+                    <button class="week-btn" data-week="2">
+                        <span class="week-number">Week 2</span>
+                        <span class="week-title">Emotion Psychology and Theory</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div id="learning-content" class="learning-content" style="display: none;">
+                <h2 id="week-title">Week Content</h2>
+                <div id="week-materials" class="week-materials"></div>
+            </div>
+        </main>
+        
+        <footer>
+            <p> - A </p>
+        </footer>
+    </div>
+    
+    <script src="common.js"></script>
+    <script src="learn.js"></script>
+</body>
+</html> 
