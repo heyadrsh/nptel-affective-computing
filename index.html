@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
 </head>
 <body>
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="theme-icon-light">
+            <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+        </svg>
+    </button>
+
     <div class="container">
         <header class="home-header">
             <div class="header-content">
@@ -16,7 +22,7 @@
                 <h2 class="title-subtitle">NPTEL Assignment Practice</h2>
             </div>
         </header>
-        
+
         <main>
             <div class="landing">
                 <div class="landing-content">
@@ -24,33 +30,34 @@
                         <div class="mode-description">
                             <p>Choose a mode to begin:</p>
                         </div>
-                        
+
                         <div class="mode-cards">
                             <div class="mode-card">
                                 <div class="mode-icon">📚</div>
                                 <h3>Learn</h3>
                                 <p>Assignment with Correct Answers</p>
-                                <button id="learnBtn" class="btn primary-btn">Start Learning</button>
+                                <button id="learnBtn" class="btn primary-btn" type="button">Start Learning</button>
                             </div>
-                            
+
                             <div class="mode-card">
                                 <div class="mode-icon">✓</div>
                                 <h3>Practice</h3>
                                 <p>Test your knowledge with quizzes</p>
-                                <button id="practiceBtn" class="btn primary-btn">Start Practice</button>
+                                <button id="practiceBtn" class="btn primary-btn" type="button">Start Practice</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
-        
+
         <footer>
             <p> - Aadxrsh </p>
         </footer>
     </div>
-    
+
     <script src="common.js"></script>
+    <script src="theme.js"></script>
     <script src="main.js"></script>
 </body>
-</html> 
+</html>

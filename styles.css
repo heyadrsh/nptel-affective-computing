@@ -6,13 +6,27 @@
 }
 
 :root {
-    /* Core colors */
+    /* Core colors - Light Theme (default) */
     --white: #ffffff;
+    --white-rgb: 255, 255, 255;
     --off-white: #f8f8f8;
+    --off-white-rgb: 248, 248, 248;
     --light-gray: #f0f0f0;
+    --light-gray-rgb: 240, 240, 240;
     --medium-gray: #aaaaaa;
+    --medium-gray-rgb: 170, 170, 170;
     --dark-gray: #444444;
+    --dark-gray-rgb: 68, 68, 68;
     --black: #000000;
+    --black-rgb: 0, 0, 0;
+
+    /* Theme colors */
+    --background: var(--off-white);
+    --card-background: var(--white);
+    --text-color: var(--black);
+    --text-secondary: var(--dark-gray);
+    --border-color: rgba(0, 0, 0, 0.05);
+    --accent-color: var(--black);
 
     /* Typography */
     --font-primary: 'Poppins', 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -36,14 +50,45 @@
     --transition-normal: 0.3s ease;
 }
 
+/* Dark Theme */
+[data-theme="dark"] {
+    /* Inverted colors for dark theme */
+    --white: #000000;
+    --white-rgb: 0, 0, 0;
+    --off-white: #121212;
+    --off-white-rgb: 18, 18, 18;
+    --light-gray: #1e1e1e;
+    --light-gray-rgb: 30, 30, 30;
+    --medium-gray: #555555;
+    --medium-gray-rgb: 85, 85, 85;
+    --dark-gray: #bbbbbb;
+    --dark-gray-rgb: 187, 187, 187;
+    --black: #ffffff;
+    --black-rgb: 255, 255, 255;
+
+    /* Theme colors */
+    --background: var(--off-white);
+    --card-background: var(--white);
+    --text-color: var(--black);
+    --text-secondary: var(--dark-gray);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --accent-color: var(--black);
+
+    /* Shadows for dark mode */
+    --shadow-sm: 0 1px 2px rgba(255, 255, 255, 0.05);
+    --shadow-md: 0 4px 6px rgba(255, 255, 255, 0.03), 0 2px 4px rgba(255, 255, 255, 0.03);
+    --shadow-lg: 0 10px 15px rgba(255, 255, 255, 0.03), 0 5px 10px rgba(255, 255, 255, 0.01);
+}
+
 body {
     font-family: var(--font-primary);
-    background-color: var(--off-white);
-    color: var(--black);
+    background-color: var(--background);
+    color: var(--text-color);
     line-height: 1.6;
     font-weight: var(--font-weight-regular);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: background-color var(--transition-normal), color var(--transition-normal);
 }
 
 .container {
@@ -157,12 +202,13 @@ footer {
 .landing {
     text-align: center;
     padding: 2rem 1.5rem;
-    background-color: var(--white);
+    background-color: var(--card-background);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--shadow-lg);
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    transition: background-color var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .landing::before {
@@ -172,8 +218,12 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, rgba(248,248,248,0.7) 0%, rgba(255,255,255,0.8) 50%, rgba(248,248,248,0.7) 100%);
+    background: linear-gradient(135deg,
+        rgba(var(--off-white-rgb), 0.7) 0%,
+        rgba(var(--white-rgb), 0.8) 50%,
+        rgba(var(--off-white-rgb), 0.7) 100%);
     z-index: 0;
+    transition: background var(--transition-normal);
 }
 
 .landing::after {
@@ -183,8 +233,9 @@ footer {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(0,0,0,0.03) 0%, transparent 60%);
+    background: radial-gradient(circle, rgba(var(--black-rgb), 0.03) 0%, transparent 60%);
     z-index: 0;
+    transition: background var(--transition-normal);
 }
 
 .landing-content {
@@ -760,8 +811,8 @@ input:checked + .toggle-slider:before {
     left: 20px;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--black);
-    background-color: var(--white);
+    color: var(--text-color);
+    background-color: var(--card-background);
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -771,18 +822,69 @@ input:checked + .toggle-slider:before {
     align-items: center;
     transition: all var(--transition-normal);
     z-index: 100;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--shadow-md);
 }
 
 .back-arrow:hover {
     transform: translateX(-3px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow-lg);
 }
 
 .back-arrow svg {
     width: 24px;
     height: 24px;
     fill: currentColor;
+}
+
+/* Theme Toggle Button */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-color);
+    background-color: var(--card-background);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all var(--transition-normal);
+    z-index: 100;
+    box-shadow: var(--shadow-md);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-lg);
+}
+
+.theme-toggle svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+    transition: transform var(--transition-normal);
+}
+
+.theme-toggle:hover svg {
+    transform: rotate(30deg);
+}
+
+@media (max-width: 480px) {
+    .theme-toggle {
+        top: 15px;
+        right: 15px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .theme-toggle svg {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .settings-panel {
