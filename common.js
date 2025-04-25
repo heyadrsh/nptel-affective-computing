@@ -186,9 +186,9 @@ const quizData = {
             {
                 question: "When conducting research on emotion recognition, why is the inclusion of naturalistic stimuli important?",
                 options: [
-                    "It helps maintain consistent emotional expression across participants", 
-                    "It increases the realism and relevance of the research findings", 
-                    "It simplifies the emotion recognition process for participants", 
+                    "It helps maintain consistent emotional expression across participants",
+                    "It increases the realism and relevance of the research findings",
+                    "It simplifies the emotion recognition process for participants",
                     "It minimizes ethical concerns in emotional manipulation"
                 ],
                 correctAnswer: "It increases the realism and relevance of the research findings",
@@ -197,9 +197,9 @@ const quizData = {
             {
                 question: "What is the purpose of presenting a neutral baseline film before showing emotional clips in a study?",
                 options: [
-                    "To establish a standard emotional state for all participants", 
-                    "To assess the baseline physiological signals", 
-                    "To make the participant feel neutral about the study", 
+                    "To establish a standard emotional state for all participants",
+                    "To assess the baseline physiological signals",
+                    "To make the participant feel neutral about the study",
                     "To ensure that the participant understands the instructions"
                 ],
                 correctAnswer: "To establish a standard emotional state for all participants",
@@ -208,9 +208,9 @@ const quizData = {
             {
                 question: "What kind of data can be collected while a participant is watching an emotional video clip?",
                 options: [
-                    "Physiological signals such as heart rate and skin conductivity", 
-                    "Audio-visual data through a webcam or camera", 
-                    "Both physiological signals and audio-visual data", 
+                    "Physiological signals such as heart rate and skin conductivity",
+                    "Audio-visual data through a webcam or camera",
+                    "Both physiological signals and audio-visual data",
                     "Only self-reported emotions from the participant"
                 ],
                 correctAnswer: "Both physiological signals and audio-visual data",
@@ -219,9 +219,9 @@ const quizData = {
             {
                 question: "What is the primary purpose of the Institutional Review Board (IRB) in human research studies?",
                 options: [
-                    "To ensure that research is conducted ethically and protects the welfare of human subjects", 
-                    "To analyze the scientific validity of research proposals", 
-                    "To recruit participants for experiments", 
+                    "To ensure that research is conducted ethically and protects the welfare of human subjects",
+                    "To analyze the scientific validity of research proposals",
+                    "To recruit participants for experiments",
                     "To determine the funding for human research projects"
                 ],
                 correctAnswer: "To ensure that research is conducted ethically and protects the welfare of human subjects",
@@ -236,9 +236,9 @@ const quizData = {
             {
                 question: "If you prefer a more customized approach to data annotation, what option do you have?",
                 options: [
-                    "Use prebuilt annotation tools exclusively", 
-                    "Write your own scripts for data annotation", 
-                    "Hire external annotators", 
+                    "Use prebuilt annotation tools exclusively",
+                    "Write your own scripts for data annotation",
+                    "Hire external annotators",
                     "Focus only on video and audio modalities"
                 ],
                 correctAnswer: "Write your own scripts for data annotation",
@@ -247,9 +247,9 @@ const quizData = {
             {
                 question: "What is the primary function of data mining tools in affective computing?",
                 options: [
-                    "To collect raw data", 
-                    "To preprocess data", 
-                    "To analyze and understand emotions in the collected data", 
+                    "To collect raw data",
+                    "To preprocess data",
+                    "To analyze and understand emotions in the collected data",
                     "To annotate the data"
                 ],
                 correctAnswer: "To analyze and understand emotions in the collected data",
@@ -258,9 +258,9 @@ const quizData = {
             {
                 question: "Which of the following tools is mentioned as a commonly used and simple tool for emotion expression in machines?",
                 options: [
-                    "WEKA", 
-                    "ICT Virtual Human Toolkit", 
-                    "ROS (Robotics Operating System)", 
+                    "WEKA",
+                    "ICT Virtual Human Toolkit",
+                    "ROS (Robotics Operating System)",
                     "SAM (Self-Assessment Manikin)"
                 ],
                 correctAnswer: "ICT Virtual Human Toolkit",
@@ -579,10 +579,11 @@ const quizData = {
                 userAnswer: null
             },
             {
-                question: "Which fusion level is most suitable for modalities with different temporal resolutions?",
+                question: "Which fusion level is most suitable for modalities with different temporal resolutions? (Multiple correct)",
                 options: ["Early fusion", "Intermediate fusion", "Late fusion", "All have the same effect."],
-                correctAnswer: "Late fusion",
-                userAnswer: null
+                correctAnswer: ["Intermediate fusion", "Late fusion"],
+                userAnswer: null,
+                multipleCorrect: true
             },
             {
                 question: "Which type of features does feature selection aim to eliminate?",
@@ -923,11 +924,11 @@ function updateBestScore(weekId, score) {
 function loadSettings() {
     const savedScrambleOptions = localStorage.getItem('nptel_scrambleOptions');
     const savedScrambleQuestions = localStorage.getItem('nptel_scrambleQuestions');
-    
+
     if (savedScrambleOptions !== null) {
         scrambleOptions = savedScrambleOptions === 'true';
     }
-    
+
     if (savedScrambleQuestions !== null) {
         scrambleQuestions = savedScrambleQuestions === 'true';
     }
@@ -945,4 +946,4 @@ function shuffleArray(array) {
 
 // Load settings and best scores when the script loads
 loadSettings();
-loadBestScores(); 
+loadBestScores();

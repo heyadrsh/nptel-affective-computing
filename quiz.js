@@ -87,24 +87,65 @@ document.addEventListener('DOMContentLoaded', function() {
                 optionsToDisplay = shuffleArray(optionsToDisplay);
             }
 
+            // Check if this is a multiple correct question
+            const isMultipleCorrect = questionData.multipleCorrect === true;
+
+            // Add a note if it's a multiple correct question
+            if (isMultipleCorrect) {
+                const multipleCorrectNote = document.createElement('p');
+                multipleCorrectNote.className = 'multiple-correct-note';
+                multipleCorrectNote.textContent = 'Select all that apply.';
+                questionElement.appendChild(multipleCorrectNote);
+            }
+
             optionsToDisplay.forEach((option, optionIndex) => {
                 const optionElement = document.createElement('label');
                 optionElement.className = 'option';
 
-                const radioInput = document.createElement('input');
-                radioInput.type = 'radio';
-                radioInput.name = `question-${index}`;
-                radioInput.value = option;
-                radioInput.id = `q${index}-option${optionIndex}`;
+                // Create either a radio button or checkbox based on question type
+                const inputElement = document.createElement('input');
+                inputElement.type = isMultipleCorrect ? 'checkbox' : 'radio';
+                inputElement.name = `question-${index}`;
+                inputElement.value = option;
+                inputElement.id = `q${index}-option${optionIndex}`;
 
-                // Check if this option is the user's previous answer
-                if (questionData.userAnswer === option) {
-                    radioInput.checked = true;
+                // Check if this option is in the user's previous answers
+                if (isMultipleCorrect) {
+                    // For multiple correct questions, userAnswer is an array
+                    if (Array.isArray(questionData.userAnswer) && questionData.userAnswer.includes(option)) {
+                        inputElement.checked = true;
+                    }
+                } else {
+                    // For single answer questions
+                    if (questionData.userAnswer === option) {
+                        inputElement.checked = true;
+                    }
                 }
 
-                radioInput.addEventListener('change', () => {
-                    // Update user answer
-                    currentWeekData.questions[index].userAnswer = option;
+                inputElement.addEventListener('change', () => {
+                    // Update user answer based on question type
+                    if (isMultipleCorrect) {
+                        // Initialize userAnswer as an array if it doesn't exist
+                        if (!Array.isArray(currentWeekData.questions[index].userAnswer)) {
+                            currentWeekData.questions[index].userAnswer = [];
+                        }
+
+                        // Add or remove the option from the array
+                        if (inputElement.checked) {
+                            // Add the option if it's not already in the array
+                            if (!currentWeekData.questions[index].userAnswer.includes(option)) {
+                                currentWeekData.questions[index].userAnswer.push(option);
+                            }
+                        } else {
+                            // Remove the option from the array
+                            currentWeekData.questions[index].userAnswer = currentWeekData.questions[index].userAnswer.filter(
+                                item => item !== option
+                            );
+                        }
+                    } else {
+                        // For single answer questions
+                        currentWeekData.questions[index].userAnswer = option;
+                    }
 
                     // Save the updated quiz state
                     localStorage.setItem('nptel_currentQuiz', JSON.stringify(currentWeekData));
@@ -113,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     updateProgress();
                 });
 
-                optionElement.appendChild(radioInput);
+                optionElement.appendChild(inputElement);
 
                 const optionText = document.createTextNode(option);
                 optionElement.appendChild(optionText);
@@ -230,7 +271,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Analyze each question
         currentWeekData.questions.forEach((question, index) => {
-            const isCorrect = question.userAnswer === question.correctAnswer;
+            let isCorrect = false;
+
+            // Check if it's a multiple correct question
+            if (question.multipleCorrect === true) {
+                // For multiple correct questions, check if all correct answers are selected
+                // and no incorrect answers are selected
+                if (Array.isArray(question.userAnswer) && Array.isArray(question.correctAnswer)) {
+                    // Check if all correct answers are selected
+                    const allCorrectSelected = question.correctAnswer.every(answer =>
+                        question.userAnswer.includes(answer)
+                    );
+
+                    // Check if no incorrect answers are selected
+                    const noIncorrectSelected = question.userAnswer.every(answer =>
+                        question.correctAnswer.includes(answer)
+                    );
+
+                    isCorrect = allCorrectSelected && noIncorrectSelected && question.userAnswer.length > 0;
+                }
+            } else {
+                // For single answer questions
+                isCorrect = question.userAnswer === question.correctAnswer;
+            }
+
             if (isCorrect) correctCount++;
 
             // Only display incorrect or unanswered questions
@@ -248,12 +312,28 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 // User's answer
                 const userAnswerText = document.createElement('p');
-                userAnswerText.innerHTML = `<strong>Your answer:</strong> ${question.userAnswer || 'Not answered'}`;
+                if (Array.isArray(question.userAnswer)) {
+                    // For multiple correct questions
+                    if (question.userAnswer.length === 0) {
+                        userAnswerText.innerHTML = `<strong>Your answer:</strong> Not answered`;
+                    } else {
+                        userAnswerText.innerHTML = `<strong>Your answer:</strong> ${question.userAnswer.join(', ')}`;
+                    }
+                } else {
+                    // For single answer questions
+                    userAnswerText.innerHTML = `<strong>Your answer:</strong> ${question.userAnswer || 'Not answered'}`;
+                }
                 resultItem.appendChild(userAnswerText);
 
                 // Correct answer
                 const correctAnswerText = document.createElement('p');
-                correctAnswerText.innerHTML = `<strong>Correct answer:</strong> ${question.correctAnswer}`;
+                if (Array.isArray(question.correctAnswer)) {
+                    // For multiple correct questions
+                    correctAnswerText.innerHTML = `<strong>Correct answer:</strong> ${question.correctAnswer.join(', ')}`;
+                } else {
+                    // For single answer questions
+                    correctAnswerText.innerHTML = `<strong>Correct answer:</strong> ${question.correctAnswer}`;
+                }
                 resultItem.appendChild(correctAnswerText);
 
                 resultDetailsElement.appendChild(resultItem);
