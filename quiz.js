@@ -359,22 +359,24 @@ document.addEventListener('DOMContentLoaded', function() {
         // Determine which week this is to update the appropriate best score
         let weekId = 'complete';
 
-        // Check for all weeks (1-12)
-        for (let i = 1; i <= 12; i++) {
-            // Check for different formats of week titles (Week 10, Week 10:, etc.)
-            if (currentWeekData.title.includes(`Week ${i}`) ||
-                currentWeekData.title.includes(`Week ${i}:`) ||
-                currentWeekData.title.includes(`Week ${i} :`)) {
-                weekId = `week${i}`;
-                break;
+        // First check for double-digit weeks (10, 11, 12) to avoid matching with single digit weeks
+        if (currentWeekData.title.includes("Week 10")) {
+            weekId = "week10";
+        } else if (currentWeekData.title.includes("Week 11")) {
+            weekId = "week11";
+        } else if (currentWeekData.title.includes("Week 12")) {
+            weekId = "week12";
+        } else {
+            // Then check for single-digit weeks (1-9)
+            for (let i = 1; i <= 9; i++) {
+                // Check for different formats of week titles (Week 1, Week 1:, etc.)
+                if (currentWeekData.title.includes(`Week ${i}`) ||
+                    currentWeekData.title.includes(`Week ${i}:`) ||
+                    currentWeekData.title.includes(`Week ${i} :`)) {
+                    weekId = `week${i}`;
+                    break;
+                }
             }
-        }
-
-        // Special case for Week 10, 11, and 12 if not detected above
-        if (weekId === 'complete') {
-            if (currentWeekData.title.includes("Week 10")) weekId = "week10";
-            else if (currentWeekData.title.includes("Week 11")) weekId = "week11";
-            else if (currentWeekData.title.includes("Week 12")) weekId = "week12";
         }
 
         // Update best score if current score is better
