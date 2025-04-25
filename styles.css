@@ -468,6 +468,38 @@ footer {
     font-weight: var(--font-weight-medium);
 }
 
+/* Checkbox styling for multiple correct questions */
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--dark-gray);
+    border-radius: 3px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+    background-color: var(--white);
+}
+
+input[type="checkbox"]:checked {
+    background-color: var(--black);
+    border-color: var(--black);
+}
+
+input[type="checkbox"]:checked::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    top: 1px;
+    left: 5px;
+    transform: rotate(45deg);
+}
+
 /* Toggle Switch */
 .toggle-switch {
     position: relative;
