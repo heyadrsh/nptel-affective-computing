@@ -682,10 +682,11 @@ const quizData = {
                 userAnswer: null
             },
             {
-                question: "A machine that can anticipate future needs and adjust its behavior accordingly is at which level of adaptation?",
+                question: "A machine that can anticipate future needs and adjust its behavior accordingly is at which level of adaptation? (Multiple correct)",
                 options: ["Level 0", "Level 1", "Level 2", "Level 3"],
-                correctAnswer: "Level 3", // Note: The assignment shows both Level 2 and Level 3 as correct
-                userAnswer: null
+                correctAnswer: ["Level 2", "Level 3"],
+                userAnswer: null,
+                multipleCorrect: true
             },
             {
                 question: "Camera can be used to monitor the heart rate of the user.",
