@@ -1313,6 +1313,49 @@ input:checked + .toggle-slider:before {
     font-weight: var(--font-weight-medium);
 }
 
+/* Practice Button */
+.practice-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.practice-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: 180px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    background-color: var(--accent-color);
+    color: var(--card-background);
+    border: none;
+    border-radius: var(--border-radius-md);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.practice-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
+}
+
+.practice-btn:active {
+    transform: translateY(-1px);
+}
+
+.arrow-icon {
+    font-size: 1.2rem;
+    transition: transform var(--transition-normal);
+}
+
+.practice-btn:hover .arrow-icon {
+    transform: translateX(3px);
+}
+
 @media (max-width: 768px) {
     .learning-section {
         flex-direction: column;
