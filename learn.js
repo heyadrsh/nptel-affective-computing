@@ -62,6 +62,14 @@ document.addEventListener('DOMContentLoaded', function() {
             questionText.className = 'learning-question';
             questionText.textContent = question.question;
 
+            // Add a note for multiple correct answers
+            if (Array.isArray(question.correctAnswer) && question.correctAnswer.length > 1) {
+                const multipleCorrectNote = document.createElement('p');
+                multipleCorrectNote.className = 'multiple-correct-note';
+                multipleCorrectNote.textContent = 'Multiple correct answers';
+                questionContent.appendChild(multipleCorrectNote);
+            }
+
             const answerContainer = document.createElement('div');
             answerContainer.className = 'learning-answer-container';
 
@@ -70,9 +78,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 const optionElement = document.createElement('div');
                 optionElement.className = 'learning-option';
 
-                // Highlight correct answer
-                if (option === question.correctAnswer) {
-                    optionElement.classList.add('correct-answer');
+                // Highlight correct answer(s)
+                if (Array.isArray(question.correctAnswer)) {
+                    // For multiple correct answers
+                    if (question.correctAnswer.includes(option)) {
+                        optionElement.classList.add('correct-answer');
+                    }
+                } else {
+                    // For single correct answer
+                    if (option === question.correctAnswer) {
+                        optionElement.classList.add('correct-answer');
+                    }
                 }
 
                 optionElement.textContent = option;
