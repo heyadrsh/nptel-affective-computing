@@ -167,7 +167,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
         // Hide results initially
-        resultsElement.style.display = 'none';
+        resultsElement.classList.add('hidden');
 
         // Update progress for any previously answered questions
         updateProgress();
@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let totalQuestions = currentWeekData.questions.length;
 
         // Show results section
-        resultsElement.style.display = 'block';
+        resultsElement.classList.remove('hidden');
         resultDetailsElement.innerHTML = '';
 
         // Add header for incorrect answers section

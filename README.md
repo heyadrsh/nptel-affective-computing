@@ -1,3 +1,3 @@
-# Affective Computing NPTEL
+# Principles of Computing NPTEL
 
-Assignment practice portal 
+Assignment practice portal

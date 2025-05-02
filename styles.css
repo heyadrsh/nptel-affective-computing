@@ -1,4 +1,7 @@
 /* Global Styles */
+.hidden {
+    display: none !important;
+}
 * {
     margin: 0;
     padding: 0;
@@ -1286,6 +1289,136 @@ input:checked + .toggle-slider:before {
     .mode-icon {
         font-size: 1.5rem;
         margin-bottom: 0.3rem;
+    }
+}
+
+/* Week Notes */
+.week-notes-container {
+    background-color: var(--light-gray);
+    border-radius: var(--border-radius-md);
+    padding: 1.75rem;
+    margin-bottom: 2.5rem;
+    box-shadow: var(--shadow-md);
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.week-notes-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.week-notes-content.expanded {
+    max-height: 10000px; /* Much larger to accommodate all content */
+}
+
+.week-notes-toggle {
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--dark-gray);
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    border-radius: var(--border-radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.week-notes-toggle:hover {
+    background-color: var(--light-gray);
+}
+
+.week-notes-toggle .toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.week-notes-toggle.expanded .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.week-notes-markdown {
+    padding: 1.5rem 0;
+    line-height: 1.7;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.week-notes-markdown h2 {
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.week-notes-markdown h3 {
+    font-size: 1.1rem;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.week-notes-markdown ul, .week-notes-markdown ol {
+    padding-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.week-notes-markdown li {
+    margin-bottom: 0.75rem;
+    padding-right: 0.5rem;
+}
+
+.week-notes-markdown strong {
+    font-weight: var(--font-weight-semibold);
+}
+
+.week-notes-markdown em {
+    font-style: italic;
+}
+
+/* Responsive adjustments for notes */
+@media (max-width: 768px) {
+    .week-notes-container {
+        padding: 1.25rem;
+    }
+
+    .week-notes-markdown {
+        font-size: 0.95rem;
+    }
+
+    .week-notes-markdown h2 {
+        font-size: 1.3rem;
+    }
+
+    .week-notes-markdown h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .week-notes-container {
+        padding: 1rem;
+    }
+
+    .week-notes-markdown {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    .week-notes-markdown ul, .week-notes-markdown ol {
+        padding-left: 1.5rem;
+    }
+
+    .week-notes-markdown h2 {
+        font-size: 1.2rem;
+    }
+
+    .week-notes-markdown h3 {
+        font-size: 0.95rem;
     }
 }
 

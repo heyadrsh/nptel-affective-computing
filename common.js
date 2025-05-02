@@ -5,93 +5,113 @@ const quizData = {
         date: "Due on 2025-02-05, 23:59 IST",
         questions: [
             {
-                question: "Affective computing focuses solely on the recognition of emotions without any attempt to synthesize or simulate emotional expressions.",
-                options: ["True", "False"],
-                correctAnswer: "False",
-                userAnswer: null
-            },
-            {
-                question: "Which of the following data modalities is least likely to be used for emotion recognition?",
-                options: ["Heart Rate Variability (HRV)", "Speech Intonation", "Weather Patterns", "Facial Expressions"],
-                correctAnswer: "Weather Patterns",
-                userAnswer: null
-            },
-            {
-                question: "Thermal cameras can be effective for affect sensing because:",
+                question: "Which of the following best describes the difference between mainstream and multistream management orientations?",
                 options: [
-                    "They capture changes in heat patterns associated with emotional states",
-                    "They have high resolution for RGB-based emotion analysis.",
-                    "They are designed for real-time object tracking.",
-                    "They directly measure neural activity."
+                    "Mainstream focuses on stakeholder welfare, while multistream focuses on profit maximization.",
+                    "Mainstream emphasizes profit maximization, while multistream emphasizes multi-stakeholder well-being.",
+                    "Both focus solely on profit generation.",
+                    "Both are interchangeable terms."
                 ],
-                correctAnswer: "They capture changes in heat patterns associated with emotional states",
+                correctAnswer: "Mainstream emphasizes profit maximization, while multistream emphasizes multi-stakeholder well-being.",
                 userAnswer: null
             },
             {
-                question: "Analyzing multiple data streams simultaneously (e.g., combining facial expressions, voice tone, and physiological signals) improves the accuracy of emotion recognition systems.",
-                options: ["True", "False"],
-                correctAnswer: "True",
-                userAnswer: null
-            },
-            {
-                question: "Wearable devices like smartwatches can assist in affect sensing by:",
+                question: "Individuals who manage the work of non-managerial employees are known as-",
                 options: [
-                    "Detecting changes in motion and location.",
-                    "Tracking physiological metrics like heart rate and skin conductivity",
-                    "Providing augmented reality overlays",
-                    "Capturing high-resolution facial expressions."
+                    "First Line Managers",
+                    "Middle Managers",
+                    "Top Level Managers",
+                    "Operators"
                 ],
-                correctAnswer: "Tracking physiological metrics like heart rate and skin conductivity",
+                correctAnswer: "First Line Managers",
                 userAnswer: null
             },
             {
-                question: "Which of the following sensors is commonly used for detecting physiological signals related to emotions?",
-                options: ["Gyroscope", "Galvanic Skin Response (GSR)", "Ultrasonic Sensor", "Barcode Reader"],
-                correctAnswer: "Galvanic Skin Response (GSR)",
-                userAnswer: null
-            },
-            {
-                question: "Which of the following is an ethical concern in affective computing?",
+                question: "Who proposed the ten managerial roles grouped around interpersonal relationships, sharing of information and decision making?",
                 options: [
-                    "High computational cost",
-                    "Misinterpretation of emotional data",
-                    "Limited bandwidth for sensor data transfer",
-                    "Lack of compatibility with legacy hardware"
+                    "Mintzberg",
+                    "Henry Fayol",
+                    "Kurt Lewin",
+                    "Peter F. Drucker"
                 ],
-                correctAnswer: "Misinterpretation of emotional data",
+                correctAnswer: "Mintzberg",
                 userAnswer: null
             },
             {
-                question: "What is the primary purpose of the MACH system?",
+                question: "Which managerial level focuses primarily on translating the organization's strategy into operational tasks?",
                 options: [
-                    "To analyze environmental data",
-                    "To provide analytics on user communication behaviors",
-                    "To monitor physical health",
-                    "To replace human recruiters in interviews"
+                    "Top-level managers",
+                    "Middle-level managers",
+                    "First-line managers",
+                    "Board of directors"
                 ],
-                correctAnswer: "To provide analytics on user communication behaviors",
+                correctAnswer: "Middle-level managers",
                 userAnswer: null
             },
             {
-                question: "What ethical concern might arise with the use of systems like MACH?",
+                question: "What happens to the time spent on technical tasks as a manager advances to a higher organizational level?",
                 options: [
-                    "Over-reliance on hardware performance",
-                    "Privacy concerns regarding facial data collection",
-                    "Limited availability in rural areas",
-                    "High training cost for users"
+                    "It increases significantly",
+                    "It stays the same",
+                    "It decreases",
+                    "It becomes the primary focus"
                 ],
-                correctAnswer: "Privacy concerns regarding facial data collection",
+                correctAnswer: "It decreases",
                 userAnswer: null
             },
             {
-                question: "What is the primary goal of emotion-aware interfaces in user experience design?",
+                question: "As a \"Spokesperson,\" the manager's main responsibility is to:",
                 options: [
-                    "To create complex and visually appealing designs",
-                    "To ensure content aligns with the user's emotional state to avoid overwhelming them",
-                    "To focus solely on functional aspects of a product",
-                    "To prioritize system efficiency over user satisfaction"
+                    "Develop internal communication plans",
+                    "Represent the organization to outsiders by sharing important information",
+                    "Act as a mediator between team members",
+                    "Implement training programs"
                 ],
-                correctAnswer: "To ensure content aligns with the user's emotional state to avoid overwhelming them",
+                correctAnswer: "Represent the organization to outsiders by sharing important information",
+                userAnswer: null
+            },
+            {
+                question: "Statement 1: Future of work demands less control and command. Statement 2: Successful departments and organizations don't just happen-they are managed.",
+                options: [
+                    "Statement 1 is true",
+                    "Statement 2 is true",
+                    "Both the statements are true",
+                    "None of the statements is true"
+                ],
+                correctAnswer: "Both the statements are true",
+                userAnswer: null
+            },
+            {
+                question: "Which of the following statements challenges the universality of management?",
+                options: [
+                    "Different management functions are required in different cultural contexts.",
+                    "All organizations must plan, organize, lead, and control.",
+                    "Both small and large businesses benefit from management practices.",
+                    "Management principles are adaptable to various sectors."
+                ],
+                correctAnswer: "Different management functions are required in different cultural contexts.",
+                userAnswer: null
+            },
+            {
+                question: "Which of the following is NOT one of the eight characteristics of excellent enterprises?",
+                options: [
+                    "Lean staff",
+                    "Close to the customer",
+                    "Focus solely on profit maximization",
+                    "Autonomy and entrepreneurship"
+                ],
+                correctAnswer: "Focus solely on profit maximization",
+                userAnswer: null
+            },
+            {
+                question: "Statement 1: Employees offer challenging, exciting, and creative opportunities for meaningfulness of work. Statement 2: Successful managers often receive monetary rewards for their efforts.",
+                options: [
+                    "Statement 1 is true, Statement 2 is not true",
+                    "Statement 2 is true, Statement 1 is not true",
+                    "Both the statements are true",
+                    "Both the statements are not true"
+                ],
+                correctAnswer: "Statement 2 is true, Statement 1 is not true",
                 userAnswer: null
             }
         ]
@@ -101,68 +121,73 @@ const quizData = {
         date: "Due on 2025-02-05, 23:59 IST",
         questions: [
             {
-                question: "Which type of emotion is primarily recognized in the stimuli?",
-                options: ["Induced emotion", "Perceived emotion", "None of the given", "A and B"],
-                correctAnswer: "Perceived emotion",
+                question: "The unwritten, common rules and perceptions about relationships among people and between people and management form part of-",
+                options: ["Social Contract", "Psychological Contract", "People Contract", "Management Contract"],
+                correctAnswer: "Social Contract",
                 userAnswer: null
             },
             {
-                question: "Which model makes annotation easier for classifying emotions during data collection?",
-                options: ["Categorical Model", "Valence Arousal Dominance model", "None of the given", "A and B"],
-                correctAnswer: "Categorical Model",
+                question: "The spread of indigenous production with Make in India globally has dramatically altered the business landscape. This is an example of-",
+                options: ["Social Forces", "Political Forces", "Environmental Forces", "Technological Forces"],
+                correctAnswer: "Political Forces",
                 userAnswer: null
             },
             {
-                question: "In the Circumplex Model, which emotion belongs to Low Arousal and Positive Valence?",
-                options: ["Frustrated", "Delighted", "Content", "Tired"],
-                correctAnswer: "Content",
+                question: "Match the following:\na. Classical Approach\t        i. Human Relations Movement\nb. Behavioural Approach\tii. Total Quality Management\nc. Quantitative Approach\tiii. Contingency View\nd. Contemporary Approach\tiv. Scientific Management",
+                options: ["a-iv, b-i, c-ii, d-iii", "a-i, b-iv, c-iii, d-ii", "a-ii, b-i, c-iv, d-iii", "a-ii, b-i, c-iii, d-iv"],
+                correctAnswer: "a-iv, b-i, c-ii, d-iii",
                 userAnswer: null
             },
             {
-                question: "Dominance allows better differentiation of emotions of overlapping in the VA model.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "Who proposed time and motion studies concerned with optimum utilization of labour, reducing fatigue, and improving performance by eliminating unnecessary hand and body movements?",
+                options: ["Henry Fayol", "F.W. Taylor", "Frank and Lillian Gilbreth", "Elton Mayo"],
+                correctAnswer: "Frank and Lillian Gilbreth",
                 userAnswer: null
             },
             {
-                question: "A set of facial actions is specific to a particular emotion.",
-                options: ["True", "False"],
-                correctAnswer: "False",
-                userAnswer: null
-            },
-            {
-                question: "Which of the following is/are a result of individual variability in emotions?",
-                options: ["Accumulation of emotions over time", "Cultural bias", "Cognitive appraisal", "All of the above"],
-                correctAnswer: "All of the above",
-                userAnswer: null
-            },
-            {
-                question: "In Emotion Design, which of the following is responsible for the initial impression of a product?",
-                options: ["Behavioral", "Visceral", "Reflective", "All of the above"],
-                correctAnswer: "Visceral",
-                userAnswer: null
-            },
-            {
-                question: "In the context of emotion recognition models, which model categorizes emotions into discrete, distinct categories or labels?",
-                options: ["Categorical model", "VAD model", "Universal model", "Dynamic model"],
-                correctAnswer: "Categorical model",
-                userAnswer: null
-            },
-            {
-                question: "What is the primary distinction between perceived emotions and induced emotions?",
+                question: "Which of the following options shows the correct match for the management concepts and by whom it is propounded?",
                 options: [
-                    "Perceived emotions are universal, while induced emotions are culturally influenced.",
-                    "Perceived emotions are consciously experienced, while induced emotions are subconscious reactions.",
-                    "Perceived emotions are the emotions others observe in an individual, while induced emotions are intentionally expressed.",
-                    "Perceived emotions are the emotions an individual believes they are experiencing, while induced emotions are emotions intentionally triggered by external stimuli."
+                    "Bureaucratic Organization- Max Weber, Hawthorne Studies- Elton Mayo, Theory X,Y- McGregor, System Approach- Chester Barnard",
+                    "Bureaucratic Organization- Robert Owen, Hawthorne Studies- Hofstede, Theory X,Y- Mayo, System Approach- Max Weber",
+                    "Bureaucratic Organization- McGregor, Hawthorne Studies- Maslow, Theory X,Y- Max Weber, System Approach- Hofstede",
+                    "Bureaucratic Organization- Chester Barnard, Hawthorne Studies- McGregor, Theory X,Y- Elton Mayo, System Approach- Max Weber"
                 ],
-                correctAnswer: "Perceived emotions are the emotions an individual believes they are experiencing, while induced emotions are emotions intentionally triggered by external stimuli.",
+                correctAnswer: "Bureaucratic Organization- Max Weber, Hawthorne Studies- Elton Mayo, Theory X,Y- McGregor, System Approach- Chester Barnard",
                 userAnswer: null
             },
             {
-                question: "Which of the following design level helps in improving the user-product interaction of a product?",
-                options: ["Visceral", "Behavioral", "Reflective", "None of the above"],
-                correctAnswer: "Behavioral",
+                question: "Statement 1: Entropy is the tendency to run down and die.\nStatement 2: Subsystems depend on one another as parts of the system.",
+                options: ["Statement 1 is correct.", "Statement 2 is correct.", "Both the statements are correct.", "Both the statements are incorrect."],
+                correctAnswer: "Both the statements are correct.",
+                userAnswer: null
+            },
+            {
+                question: "Which of the following does not form part of the popular contingency variables in the contemporary management perspective?",
+                options: ["Organizational Size", "Routineness of task technology", "Synergy", "Environmental Uncertainty"],
+                correctAnswer: "Synergy",
+                userAnswer: null
+            },
+            {
+                question: "The contingency-based view of the organization considers-",
+                options: ["Case View & Universalist View", "Case View & Synergistic View", "Universalist View & Synergistic View", "Only Universalist View"],
+                correctAnswer: "Case View & Universalist View",
+                userAnswer: null
+            },
+            {
+                question: "What is the primary role of feedback in a systems approach to management?",
+                options: [
+                    "To identify customer complaints only",
+                    "To ensure organizational rules are followed strictly",
+                    "To provide information that helps adjust processes and improve performance",
+                    "To keep communication one-directional"
+                ],
+                correctAnswer: "To provide information that helps adjust processes and improve performance",
+                userAnswer: null
+            },
+            {
+                question: "Name the philosophy devoted to continuous improvement and responding to customers' needs and expectations popularized by Edward Deming and Joseph Juran.",
+                options: ["Quality Circle", "Total Quality Management", "Quality Checks", "Optimum Quality Management"],
+                correctAnswer: "Total Quality Management",
                 userAnswer: null
             }
         ]
@@ -172,98 +197,83 @@ const quizData = {
         date: "Due on 2025-02-12, 23:59 IST",
         questions: [
             {
-                question: "What type of emotional expression is typically characterized by exaggerated and scripted feelings to simulate real emotions?",
-                options: ["Spontaneous expressions", "Acted expressions", "Authentic expressions", "Spontaneous nonverbal cues"],
-                correctAnswer: "Acted expressions",
+                question: "Standing plans are the ones that provide guidelines for activities to be performed repetitively. Which among the following is not a standing plan?",
+                options: ["Policies", "Rules", "Budget", "Procedures"],
+                correctAnswer: "Budget",
                 userAnswer: null
             },
             {
-                question: "Which experimental design involves comparing different groups of participants who are exposed to varying conditions or stimuli?",
-                options: ["Between-subject design", "Within-subject design", "Both A and B", "Correlational design"],
-                correctAnswer: "Between-subject design",
+                question: "XYZ company has set the objective of 200,000-unit sales considering the favorable government policy towards digitization of transactions. This is an example of which step of the planning process?",
+                options: ["Developing planning premises", "Identifying alternatives", "Objective setting", "Implementing plan"],
+                correctAnswer: "Developing planning premises",
                 userAnswer: null
             },
             {
-                question: "When conducting research on emotion recognition, why is the inclusion of naturalistic stimuli important?",
+                question: "Name the fastest-growing form of environmental scanning that allows managers to anticipate competitors' actions rather than merely reacting to them.",
+                options: ["Competitor Action", "Competitor Intelligence", "Competitive Monitoring", "Competitive Knowledge"],
+                correctAnswer: "Competitor Intelligence",
+                userAnswer: null
+            },
+            {
+                question: "\"Organizations operate in a pluralistic society\". Which of the following options best explains this statement?",
                 options: [
-                    "It helps maintain consistent emotional expression across participants",
-                    "It increases the realism and relevance of the research findings",
-                    "It simplifies the emotion recognition process for participants",
-                    "It minimizes ethical concerns in emotional manipulation"
+                    "Organizations have employees from diverse backgrounds.",
+                    "Organizations operate with groups and committees.",
+                    "Organizations have multiple agendas and strategies.",
+                    "Organizations address multiple interests of the stakeholders."
                 ],
-                correctAnswer: "It increases the realism and relevance of the research findings",
+                correctAnswer: "Organizations address multiple interests of the stakeholders.",
                 userAnswer: null
             },
             {
-                question: "What is the purpose of presenting a neutral baseline film before showing emotional clips in a study?",
+                question: "The set of values, beliefs, behaviour, customs, and attitude that helps people understand what the organization stands for, how it operates, and what it considers important is known as:",
+                options: ["Corporate Clan", "Inside Stories", "Corporate Culture", "Value System"],
+                correctAnswer: "Corporate Culture",
+                userAnswer: null
+            },
+            {
+                question: "When an organization is in multiple businesses, those individual businesses that are independent and have their own competitive advantage are referred to as",
+                options: ["Strategic Business Unit", "Separate Units", "Strategic Intent", "Business Portfolio"],
+                correctAnswer: "Strategic Business Unit",
+                userAnswer: null
+            },
+            {
+                question: "Match the following:\na. Core Competency\ti. Value-creating capabilities of organization\nb. Capabilities\tii. Financial, human, capital, tangible/intangible assets\nc. Resources\tiii. Unique resources that the organization possess\nd. Strength\tiv. Skills and abilities",
+                options: ["a-i, b-iv, c-ii, d-iii", "a-ii, b-i, c-iii, d-iv", "a-ii, b-i, c-iv, d-iii", "a-iii, b-iv, c-i, d-ii"],
+                correctAnswer: "a-i, b-iv, c-ii, d-iii",
+                userAnswer: null
+            },
+            {
+                question: "Which products would likely be categorized as a \"Star\" in the BCG Matrix?",
                 options: [
-                    "To establish a standard emotional state for all participants",
-                    "To assess the baseline physiological signals",
-                    "To make the participant feel neutral about the study",
-                    "To ensure that the participant understands the instructions"
+                    "A popular smartphone model in a rapidly growing market",
+                    "A declining desktop computer brand in a stagnant market",
+                    "A niche product with minimal market share in a growing market",
+                    "A well-established soft drink brand in a stable market"
                 ],
-                correctAnswer: "To establish a standard emotional state for all participants",
+                correctAnswer: "A popular smartphone model in a rapidly growing market",
                 userAnswer: null
             },
             {
-                question: "What kind of data can be collected while a participant is watching an emotional video clip?",
+                question: "Which among the following companies implemented a renewal strategy during a financial crisis?",
                 options: [
-                    "Physiological signals such as heart rate and skin conductivity",
-                    "Audio-visual data through a webcam or camera",
-                    "Both physiological signals and audio-visual data",
-                    "Only self-reported emotions from the participant"
+                    "Apple introducing the iPhone to expand its product line",
+                    "General Motors reorganizing and filing for bankruptcy during the 2008 financial crisis",
+                    "Amazon launching its Prime service",
+                    "Tesla expanding into the energy sector"
                 ],
-                correctAnswer: "Both physiological signals and audio-visual data",
+                correctAnswer: "General Motors reorganizing and filing for bankruptcy during the 2008 financial crisis",
                 userAnswer: null
             },
             {
-                question: "What is the primary purpose of the Institutional Review Board (IRB) in human research studies?",
+                question: "Which of the following illustrates the \"Threat of Substitutes\" in Porter's Five Forces?",
                 options: [
-                    "To ensure that research is conducted ethically and protects the welfare of human subjects",
-                    "To analyze the scientific validity of research proposals",
-                    "To recruit participants for experiments",
-                    "To determine the funding for human research projects"
+                    "A car manufacturer facing competition from bike-sharing apps",
+                    "A smartphone company entering the market with a new model",
+                    "A technology firm cutting down its prices to gain market share",
+                    "A supplier increasing the cost of raw materials"
                 ],
-                correctAnswer: "To ensure that research is conducted ethically and protects the welfare of human subjects",
-                userAnswer: null
-            },
-            {
-                question: "Which of the following is NOT one of the categories of tools used in affective computing?",
-                options: ["Data collection tools", "Signal analysis tools", "Affective expression tools", "Natural language processing tools"],
-                correctAnswer: "Natural language processing tools",
-                userAnswer: null
-            },
-            {
-                question: "If you prefer a more customized approach to data annotation, what option do you have?",
-                options: [
-                    "Use prebuilt annotation tools exclusively",
-                    "Write your own scripts for data annotation",
-                    "Hire external annotators",
-                    "Focus only on video and audio modalities"
-                ],
-                correctAnswer: "Write your own scripts for data annotation",
-                userAnswer: null
-            },
-            {
-                question: "What is the primary function of data mining tools in affective computing?",
-                options: [
-                    "To collect raw data",
-                    "To preprocess data",
-                    "To analyze and understand emotions in the collected data",
-                    "To annotate the data"
-                ],
-                correctAnswer: "To analyze and understand emotions in the collected data",
-                userAnswer: null
-            },
-            {
-                question: "Which of the following tools is mentioned as a commonly used and simple tool for emotion expression in machines?",
-                options: [
-                    "WEKA",
-                    "ICT Virtual Human Toolkit",
-                    "ROS (Robotics Operating System)",
-                    "SAM (Self-Assessment Manikin)"
-                ],
-                correctAnswer: "ICT Virtual Human Toolkit",
+                correctAnswer: "A car manufacturer facing competition from bike-sharing apps",
                 userAnswer: null
             }
         ]
@@ -273,63 +283,63 @@ const quizData = {
         date: "Due on 2025-02-19, 23:59 IST",
         questions: [
             {
-                question: "Which frame serves as the reference frame for facial expression recognition?",
-                options: ["Starting frame of the sequence", "Last frame of the sequence", "Peak expression frame", "Random frame"],
-                correctAnswer: "Peak expression frame",
+                question: "Which forecasting technique is most suitable to predict the effect of DVD players on the sale of VHS players?",
+                options: ["Substitution Effect", "Time Series Analysis", "Regression Model", "Econometric Method"],
+                correctAnswer: "Substitution Effect",
                 userAnswer: null
             },
             {
-                question: "Dynamic facial expressions share the transition duration.",
-                options: ["True", "False"],
-                correctAnswer: "False",
+                question: "Statement 1: Forecasting results are always accurate. Statement 2: Judgement and Causal models are used for long-term forecasting.",
+                options: ["Statement 1 is true, Statement 2 is not true", "Statement 2 is true, Statement 1 is not true", "Both the statements are true", "Both the statements are not true"],
+                correctAnswer: "Statement 2 is true, Statement 1 is not true",
                 userAnswer: null
             },
             {
-                question: "Which of the following is not an important step in conventional FER?",
-                options: ["Face detection", "Feature Extraction", "Background analysis", "Face landmark detection"],
-                correctAnswer: "Background analysis",
+                question: "Which of the following is an example of succession planning in action?",
+                options: ["Promoting a senior manager to a leadership role without prior preparation", "Conducting regular performance reviews for all employees", "Assigning a high-potential employee to shadow a retiring executive", "Outsourcing talent acquisition to an external agency"],
+                correctAnswer: "Assigning a high-potential employee to shadow a retiring executive",
                 userAnswer: null
             },
             {
-                question: "Temporal information is crucial for detecting micro-expressions.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "The Delphi Method is typically used for:",
+                options: ["Analyzing past financial performance", "Building consensus on complex issues among experts", "Conducting customer satisfaction surveys", "Creating social media marketing strategies"],
+                correctAnswer: "Building consensus on complex issues among experts",
                 userAnswer: null
             },
             {
-                question: "What does FACS stand for?",
-                options: ["Facial Attribute Coding System", "Facial Affect Coding System", "Facial Action Coding System", "Functional Action Coding System"],
-                correctAnswer: "Facial Action Coding System",
+                question: "A retailer uses last year's holiday sales data to predict this year's holiday demand. This is an example of:",
+                options: ["Qualitative forecasting", "Casual forecasting", "Time-series forecasting", "Judgmental forecasting"],
+                correctAnswer: "Time-series forecasting",
                 userAnswer: null
             },
             {
-                question: "Which of the facial features require less storage?",
-                options: ["Both appearance and geometric", "Appearance only", "Geometric only", "None of the above"],
-                correctAnswer: "Geometric only",
+                question: "Which of the following is an example of the Jury of Opinion method?",
+                options: ["A panel of marketing managers estimating future product demand based on market conditions", "A software predicting demand using historical sales data", "A retailer analyzing seasonal trends from past years", "Conducting a survey of customers to gauge preferences"],
+                correctAnswer: "A panel of marketing managers estimating future product demand based on market conditions",
                 userAnswer: null
             },
             {
-                question: "Sequential information helps in expression recognition.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "Which of the following demonstrates internal benchmarking?",
+                options: ["A company comparing sales performance across its regional offices", "A company studying customer satisfaction metrics of its competitors", "An organization adopting best practices from industry leaders", "A startup setting goals based on leading brands in the market"],
+                correctAnswer: "A company comparing sales performance across its regional offices",
                 userAnswer: null
             },
             {
-                question: "Which of the following features do not provide motion information?",
-                options: ["Motion History Images (HMI)", "Local Binary Patterns (LBP)", "Histogram of Gradients (HoG)", "Optical Flow"],
-                correctAnswer: "Histogram of Gradients (HoG)",
+                question: "Although there can be multiple ways an organization can allocate resources to function effectively and efficiently. Which among the following is not an approach for the same?",
+                options: ["Scheduling", "Budgeting", "Breakeven analysis", "Regression modelling"],
+                correctAnswer: "Regression modelling",
                 userAnswer: null
             },
             {
-                question: "The relative position of the persons in a group has no effect on the group level affect.",
-                options: ["True", "False"],
-                correctAnswer: "False",
+                question: "Match the following: Types of Budgets Description 1. Cash Budget a. Estimates the income generated from sales of goods and services during a specific period. 2. Revenue Budget b. Outlines the costs associated with operations, including fixed and variable expenses. 3. Profit Budget c. Focuses on estimating expected cash inflows and outflows to ensure liquidity. 4. Expense Budget d. Projects the anticipated net earnings by subtracting estimated costs from revenues.",
+                options: ["1-c, 2-a, 3-d, 4-b", "1-b, 2-c, 3-d, 4-a", "1-a, 2-d, 3-b, 4-c", "1-d, 2-b, 3-c, 4-a"],
+                correctAnswer: "1-c, 2-a, 3-d, 4-b",
                 userAnswer: null
             },
             {
-                question: "When dealing with subtle facial expressions, which of the following is not a setback?",
-                options: ["Self-occlusion", "Illumination", "Individual variability", "Pose variation"],
-                correctAnswer: "Pose variation",
+                question: "What is typically analyzed in scenario planning to create different future scenarios?",
+                options: ["A company's existing financial records", "External uncertainties like market trends and regulatory changes", "Current employee performance metrics", "The company's internal budget allocation for the next fiscal year"],
+                correctAnswer: "External uncertainties like market trends and regulatory changes",
                 userAnswer: null
             }
         ]
@@ -339,63 +349,63 @@ const quizData = {
         date: "Due on 2025-02-26, 23:59 IST",
         questions: [
             {
-                question: "Which of the following is true about emotional speech signals?",
-                options: ["Emotional speech always follows predictable patterns", "Emotional speech can be conveyed through tone, rhythm, and loudness", "Emotional speech is only expressed through content words", "Emotional speech is always louder than neutral speech"],
-                correctAnswer: "Emotional speech can be conveyed through tone, rhythm, and loudness",
+                question: "A person who only touches the tail of an elephant and describes it as a rope, while another touches the tusk and says it's a spear, illustrates which concept of perception?",
+                options: ["Selective perception", "Sensory adaptation", "Figure-ground perception", "Bottom-up processing"],
+                correctAnswer: "Selective perception",
                 userAnswer: null
             },
             {
-                question: "What is a key factor in determining the emotional tone of a speaker's voice?",
-                options: ["The pitch and modulation of the voice", "The speed of speech", "The presence of background music", "The clarity of the speaker's pronunciation"],
-                correctAnswer: "The pitch and modulation of the voice",
+                question: "Which psychological concept is closely related to the Pygmalion Effect?",
+                options: ["Self-fulfilling prophecy", "Cognitive dissonance", "Confirmation bias", "Loss aversion"],
+                correctAnswer: "Self-fulfilling prophecy",
                 userAnswer: null
             },
             {
-                question: "Which of the following is a commonly used feature in speech emotion recognition?",
-                options: ["Mel-frequency cepstral coefficients (MFCCs)", "Linear prediction coefficients (LPCs)", "Formant frequencies", "All of the above"],
-                correctAnswer: "All of the above",
+                question: "Statement 1: Decision-making is influenced by perception. Statement 2: Decisions are at the core of planning.",
+                options: ["Statement 1 is true, Statement 2 is not true", "Statement 2 is true, Statement 1 is not true", "Both the statements are true", "Both the statements are not true"],
+                correctAnswer: "Both the statements are true",
                 userAnswer: null
             },
             {
-                question: "What does \"prosody\" refer to in speech emotion recognition?",
-                options: ["The phonetic structure of speech", "The rhythm, pitch, and intonation patterns in speech", "The speaker's gender and age-related characteristics", "The loudness of speech"],
-                correctAnswer: "The rhythm, pitch, and intonation patterns in speech",
+                question: "The implementation phase of the decision-making process includes:",
+                options: ["Choosing the most expensive alternative", "Putting the selected solution into action and monitoring progress", "Ignoring feedback from stakeholders", "Only evaluating short-term results"],
+                correctAnswer: "Putting the selected solution into action and monitoring progress",
                 userAnswer: null
             },
             {
-                question: "Why is it important to analyze emotions in situations where people speak different languages, like in interrogations?",
-                options: ["To understand the emotional state of the speaker", "To count how many languages are being spoken", "To identify the speaker's name", "To translate all words to one language"],
-                correctAnswer: "To understand the emotional state of the speaker",
+                question: "What level of managers take the non-programmed decisions that are unstructured and non-routine?",
+                options: ["Top-level managers", "Middle-level managers", "Lower-level managers", "Line managers"],
+                correctAnswer: "Top-level managers",
                 userAnswer: null
             },
             {
-                question: "Which of the following prosody-based features is used to measure the energy in an input acoustic signal?",
-                options: ["Loudness", "Pitch", "Speech rate", "Formant frequency"],
-                correctAnswer: "Loudness",
+                question: "Managers make decisions logically but are limited by the ability to process the information. This concept is known as:",
+                options: ["Satisficing", "Bounded Rationality", "Precedent Thinking", "Logical Thinking"],
+                correctAnswer: "Bounded Rationality",
                 userAnswer: null
             },
             {
-                question: "What is the advantage of using pre-trained networks in speech analysis over hand-engineered features like MFCC?",
-                options: ["Pre-trained networks automatically extract features through deep learning", "Hand-engineered features are more accurate", "Pre-trained networks do not require data", "Hand-engineered features work better for real-time analysis"],
-                correctAnswer: "Pre-trained networks automatically extract features through deep learning",
+                question: "Statement 1: Uncertain decisions require managerial creativity. Statement 2: Intuitive thinking is promoted by innovation.",
+                options: ["Statement 1 is true, Statement 2 is not true", "Statement 2 is true, Statement 1 is not true", "Both the statements are true", "Both the statements are not true"],
+                correctAnswer: "Statement 1 is true, Statement 2 is not true",
                 userAnswer: null
             },
             {
-                question: "Which of the following machine learning techniques is commonly used in speech emotion analysis?",
-                options: ["Hidden Markov Models", "K-means clustering", "Linear regression", "Decision trees only"],
-                correctAnswer: "Hidden Markov Models",
+                question: "Which stage of Young's creativity process is associated with the \"Eureka!\" moment or the sudden realization of a solution?",
+                options: ["Preparation", "Illumination", "Incubation", "Verification"],
+                correctAnswer: "Illumination",
                 userAnswer: null
             },
             {
-                question: "What is the primary reason for using spectrograms in speech-based emotion recognition?",
-                options: ["To visualize the frequency content of the audio signal over time", "To reduce the duration of the audio signal", "To eliminate background noise in the signal", "To make the signal easier to interpret in its raw form"],
-                correctAnswer: "To visualize the frequency content of the audio signal over time",
+                question: "Which of the following statements is true about groups and teams?",
+                options: ["All teams are groups, but not all groups are teams.", "All groups are teams, but not all teams are groups.", "Groups and teams are interchangeable terms.", "Groups perform better than teams in most situations."],
+                correctAnswer: "All teams are groups, but not all groups are teams.",
                 userAnswer: null
             },
             {
-                question: "In the speech synthesis example, how can one distinguish between disappointment and excitement in the speech?",
-                options: ["By listening to differences in tone and emotional expression in the speech", "By looking at the text that is being read aloud", "By measuring the pitch of the voice only", "By analyzing the background noise in the audio"],
-                correctAnswer: "By listening to differences in tone and emotional expression in the speech",
+                question: "Match the following: 1.Role Ambiguity a. The expectations that others have regarding how a role should be performed. 2. Role Identity b. Occurs when there is a lack of clarity about one's job duties or responsibilities. 3. Role Conflict c. The degree to which an individual understands and accepts the expectations, attitude, and behaviour of their role. 4. Role Expectation d. When incompatible demands are placed on an individual by different sources.",
+                options: ["1-a, 2-d, 3-c, 4-b", "1-b, 2-c, 3-d, 4-a", "1-c, 2-b, 3-a, 4-d", "1-d, 2-a, 3-b, 4-c"],
+                correctAnswer: "1-b, 2-c, 3-d, 4-a",
                 userAnswer: null
             }
         ]
@@ -405,63 +415,63 @@ const quizData = {
         date: "Due on 2025-03-05, 23:59 IST",
         questions: [
             {
-                question: "The shape and placement of text significantly contribute to conveying emotion in design or communication.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "Match the following: 1.Joint Venture a. McDonald's operates globally using this model where it allows others to use its brand. 2.Licensing b. Starbucks partnered with PepsiCo to produce ready-to-drink coffee products. 3. Franchising c. Disney allows manufacturers to use its characters on its products like toys and clothes. 4. Strategic Alliance d. Tata Motors partnered with Fiat to manufacture and distribute Fiat cars in India.",
+                options: ["1-a, 2-b, 3-d, 4-c", "1-b, 2-d, 3-c, 4-a", "1-c, 2-a, 3-b, 4-d", "1-d, 2-c, 3-a, 4-b"],
+                correctAnswer: "1-d, 2-c, 3-a, 4-b",
                 userAnswer: null
             },
             {
-                question: "Emotion representation in text is:",
-                options: ["Always straightforward and easily detectable without considering the surrounding context.", "Often complex and influenced by the surrounding context.", "Primarily dependent on the use of specific emotion words.", "A combination of linguistic features and contextual clues."],
-                correctAnswer: "Often complex and influenced by the surrounding context.",
+                question: "Statement 1: Production is dictated by demand and supply in free market economy. Statement 2: Tariffs are taxes levied on the exports.",
+                options: ["Statement 1 is true, Statement 2 is not true", "Statement 2 is true, Statement 1 is not true", "Both the statements are true", "Both the statements are not true"],
+                correctAnswer: "Statement 1 is true, Statement 2 is not true",
                 userAnswer: null
             },
             {
-                question: "How can cultural differences impact the interpretation of emotions in text?",
-                options: ["Cultural differences have no impact on emotion recognition.", "Cultural differences can lead to misunderstandings and misinterpretations of emotions.", "Cultural differences can enhance the understanding of emotions, as they provide diverse perspectives.", "Cultural differences are only relevant in face-to-face communication, not in text-based communication."],
-                correctAnswer: "Cultural differences can lead to misunderstandings and misinterpretations of emotions.",
+                question: "Which example best illustrates the communication approach in a high-context cultural setting?",
+                options: ["A Chinese family gathers for dinner and relies on unspoken traditions to guide the conversation.", "An American businessperson provides a PowerPoint presentation with detailed instructions.", "A German manager emails a comprehensive agenda for a meeting.", "A British executive insists on written contracts before a deal."],
+                correctAnswer: "A Chinese family gathers for dinner and relies on unspoken traditions to guide the conversation.",
                 userAnswer: null
             },
             {
-                question: "What is the significance of a high objective score for a word in SentiWordNet?",
-                options: ["The word is highly positive.", "The word is highly negative.", "The word is highly neutral.", "The word has a strong sentiment orientation."],
-                correctAnswer: "The word is highly neutral.",
+                question: "Which management style is characterized by minimal interference from the manager and maximum employee autonomy?",
+                options: ["Bureaucratic", "Laissez-faire", "Autocratic", "Participative"],
+                correctAnswer: "Laissez-faire",
                 userAnswer: null
             },
             {
-                question: "What is the primary objective of Bag-of-Words?",
-                options: ["To represent text as a numerical feature vector.", "To understand the grammatical structure of a text.", "To analyze the semantic relationships between words in a text.", "To identify the topic or theme of a text."],
-                correctAnswer: "To represent text as a numerical feature vector.",
+                question: "The Baldrige framework emphasizes a systems perspective. What does this mean?",
+                options: ["Focusing exclusively on technology systems in the organization", "Ensuring all components of the organization work cohesively towards common goals", "Prioritizing operational efficiency over strategic alignment", "Focusing only on the customer experience"],
+                correctAnswer: "Ensuring all components of the organization work cohesively towards common goals",
                 userAnswer: null
             },
             {
-                question: "What is an n-gram?",
-                options: ["A statistical method for estimating the probability of a word.", "A technique for stemming words.", "A type of neural network architecture.", "A sequence of n consecutive words in a text."],
-                correctAnswer: "A sequence of n consecutive words in a text.",
+                question: "What differentiates the geocentric approach from other international management approaches?",
+                options: ["Focuses only on host-country operations", "Prioritizes hiring based on nationality", "Hires the best talent globally, regardless of origin", "Manages operations with minimal interference from the headquarters"],
+                correctAnswer: "Hires the best talent globally, regardless of origin",
                 userAnswer: null
             },
             {
-                question: "How can part-of-speech tagging help in emotion recognition?",
-                options: ["It identifies the grammatical role of words in a sentence, which can provide clues about the intended emotion.", "It extracts keywords from a text.", "It identifies the topic of a text.", "It analyzes the semantic meaning of words."],
-                correctAnswer: "It identifies the grammatical role of words in a sentence, which can provide clues about the intended emotion.",
+                question: "What type of knowledge resides in the individual through their learnings, experience, and observations?",
+                options: ["Tacit Knowledge", "Explicit Knowledge", "Procedural Knowledge", "Descriptive Knowledge"],
+                correctAnswer: "Tacit Knowledge",
                 userAnswer: null
             },
             {
-                question: "Which model is better suited for handling rare words or out-of-vocabulary words?",
-                options: ["Word2Vec", "FastText", "GloVe", "All are equally suited"],
-                correctAnswer: "FastText",
+                question: "What is DQT (Deliver Quality on Time) in the context of the project objective?",
+                options: ["Repeated order>happy customer>more referral", "Happy customer>more referral>repeated order", "Happy customer>repeated order>more referral", "More referral>repeated order>happy customer"],
+                correctAnswer: "Happy customer>repeated order>more referral",
                 userAnswer: null
             },
             {
-                question: "What does the IDF component in TF-IDF represent?",
-                options: ["The frequency of a term within a document.", "The total number of documents in the corpus", "The importance of a term relative to the entire corpus.", "The number of times a term appears in a document multiplied by the total number of terms in the document."],
-                correctAnswer: "The importance of a term relative to the entire corpus.",
+                question: "What is a key feature of the 360-degree feedback appraisal method?",
+                options: ["Employees are evaluated only by their immediate supervisor.", "Feedback is gathered from multiple sources, including peers, subordinates, and supervisors.", "Performance is measured against pre-set objectives.", "It uses standardized performance tests for evaluation."],
+                correctAnswer: "Feedback is gathered from multiple sources, including peers, subordinates, and supervisors.",
                 userAnswer: null
             },
             {
-                question: "Basic statistics are computed around the labels assigned by different labelers in text-based emotion detection to arrive at a final emotional classification for a statement",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "Which of the following is an example of an achievable SMART goal?",
+                options: ["\"Increase sales by 300% in one month.\"", "\"Lose 20 pounds in 1 week.\"", "\"Improve customer satisfaction ratings by 10% over the next quarter.\"", "\"Become the best salesperson in the region.\""],
+                correctAnswer: "\"Improve customer satisfaction ratings by 10% over the next quarter.\"",
                 userAnswer: null
             }
         ]
@@ -471,63 +481,63 @@ const quizData = {
         date: "Due on 2025-03-12, 23:59 IST",
         questions: [
             {
-                question: "Which of the following is the primary physiological indicator measured in Electrodermal Activity (EDA)?",
-                options: ["The electrical resistance of the skin", "The amount of sweat produced by the skin", "The heart rate variability", "The brain wave activity"],
-                correctAnswer: "The electrical resistance of the skin",
+                question: "Organizational Design is the process that does not involve decisions regarding?",
+                options: ["Centralization", "Departmentalization", "Chain of Command", "Informalization"],
+                correctAnswer: "Informalization",
                 userAnswer: null
             },
             {
-                question: "Heart rate variability is often reduced in individuals experiencing high stress.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "____________ is the right bestowed on a managerial position.",
+                options: ["Authority", "Responsibility", "Accountability", "Power"],
+                correctAnswer: "Authority",
                 userAnswer: null
             },
             {
-                question: "Which of the following is NOT a typical physiological marker for detecting emotions in the autonomic nervous system?",
-                options: ["Heart rate", "Respiratory rate", "Oxygen saturation", "Skin temperature"],
-                correctAnswer: "Oxygen saturation",
+                question: "Which of the following is not the drawback of a narrow span?",
+                options: ["Expenses of additional layers of management", "Increased complexity of vertical communication", "Increased organizational efficiency", "Encouragement of overly tight supervision"],
+                correctAnswer: "Increased organizational efficiency",
                 userAnswer: null
             },
             {
-                question: "The Theta frequency band in EEG is commonly associated with deep relaxation and meditation states.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "The organic model of organizational structure does not have the following characteristics-",
+                options: ["Cross-functional team", "Clear chain of command", "Wide span of control", "Low formalization"],
+                correctAnswer: "Clear chain of command",
                 userAnswer: null
             },
             {
-                question: "Which of the following emotions has been found to be correlated with heart rate?",
-                options: ["Happiness", "Anger", "Sadness", "Surprise"],
-                correctAnswer: "Anger",
+                question: "Highly routine operating tasks achieved through specialization, with formalized rules and regulations, are known as ________________.",
+                options: ["Bureaucracy", "Flat Structure", "Matrix Structure", "Divisional Structure"],
+                correctAnswer: "Bureaucracy",
                 userAnswer: null
             },
             {
-                question: "Why does heart rate increase during stressful situations, such as giving a presentation?",
-                options: ["The brain signals the heart to pump more blood due to perceived stress or importance.", "The heart automatically adjusts to any increase in oxygen levels.", "The brain reduces the heart rate to conserve energy.", "The brain disconnects from the heart during stressful events."],
-                correctAnswer: "The brain signals the heart to pump more blood due to perceived stress or importance.",
+                question: "___________ is an unbroken line of authority that extends top management to other levels of management.",
+                options: ["Departmentalization", "Delegation", "Chain of command", "Span of control"],
+                correctAnswer: "Chain of command",
                 userAnswer: null
             },
             {
-                question: "Which of the following is a more accurate method for measuring heart rate?",
-                options: ["Photoplethysmography (PPG)", "Electrocardiogram (ECG)", "Both are equally accurate", "Neither"],
-                correctAnswer: "Electrocardiogram (ECG)",
+                question: "Which is closely related to reward power and usually arises from legitimate power; it is the power to punish?",
+                options: ["Coercive power", "Reward power", "Referent power", "Expert power"],
+                correctAnswer: "Coercive power",
                 userAnswer: null
             },
             {
-                question: "How does posture affect heart rate during measurement?",
-                options: ["It does not affect heart rate.", "An uncomfortable posture may cause an increase in heart rate due to extra effort needed for stabilization.", "An uncomfortable posture decreases heart rate.", "Posture has only a minor effect on heart rate."],
-                correctAnswer: "An uncomfortable posture may cause an increase in heart rate due to extra effort needed for stabilization.",
+                question: "A multinational corporation has given autonomy to regional managers to make decisions about the local market strategies, pricing, and product adaptations. However, the headquarters still sets broad strategic goals and monitors the overall performance of its employees. Consequently, some regional managers feel empowered while others feel restricted by overarching corporate directives. Which of the following best describes the scenario given in the case?",
+                options: ["Complete decentralization, with no oversight from headquarters", "Complete centralization, with some delegated authority", "A hybrid decentralization, balancing autonomy with centralized control", "Full decentralization, leading to independent operations at the regional level"],
+                correctAnswer: "A hybrid decentralization, balancing autonomy with centralized control",
                 userAnswer: null
             },
             {
-                question: "What aspect of emotional state can heart rate measurements accurately estimate?",
-                options: ["Valence", "Arousal", "Both valence and arousal", "Neither"],
-                correctAnswer: "Arousal",
+                question: "Statement 1: Stephen Robbins defines organizing as \"arranging and structuring work to accomplish an organizational goal\". Statement 2: Informal organizational relationships do not appear on the organizational chart.",
+                options: ["Statement 1 and Statement 2 are correct, and they are not related in nature.", "Statement 1 and Statement 2 are correct, and they are related in nature.", "Statement 1 and Statement 2 are incorrect, and they are not related in nature.", "Statement 1 and Statement 2 are incorrect, and they are related in nature."],
+                correctAnswer: "Statement 1 and Statement 2 are incorrect, and they are not related in nature.",
                 userAnswer: null
             },
             {
-                question: "Heart rate measurements can distinguish whether the arousal is caused by positive or negative stimuli.",
-                options: ["True", "False"],
-                correctAnswer: "False",
+                question: "Which of the following lines best describes collective bargaining?",
+                options: ["Employees discuss policies informally", "Employers unilaterally decide on wages and conditions", "Employers implement tactics to avoid union formation", "Negotiation between employers and employee representatives"],
+                correctAnswer: "Negotiation between employers and employee representatives",
                 userAnswer: null
             }
         ]
@@ -537,64 +547,63 @@ const quizData = {
         date: "Due on 2025-03-19, 23:59 IST",
         questions: [
             {
-                question: "Which of the following emotional states is typically associated with increased skin conductance?",
-                options: ["Boredom", "Relaxation", "Stress", "Happiness"],
-                correctAnswer: "Stress",
+                question: "___________ are the company-wide plans in which the corporation contributes share of its own stock - or cash to be used to purchase stock - to a trust established to purchase shares for employees.",
+                options: ["Profit Sharing Plans", "ESOP", "Scanlon Plans", "Earnings-at-Risk Plans"],
+                correctAnswer: "ESOP",
                 userAnswer: null
             },
             {
-                question: "What is a common technique used to measure skin conductance?",
-                options: ["Electromyography (EMG)", "Electroencephalography (EEG)", "Functional Magnetic Resonance Imaging (fMRI)", "Galvanic Skin Response (GSR)"],
-                correctAnswer: "Galvanic Skin Response (GSR)",
+                question: "Match the following: Year Common titles for \"HR\" i) 1900s a) Human Resource Management ii) 1920s b) Personnel Administration iii) 1940s c) Labour Relation Personnel iv) 2000s d) Industrial Relations Personnel",
+                options: ["i-a, ii-b, iii-c, iv-d", "i-d, ii-c, iii-b, iv-a", "i-c, ii-b, iii-a, iv-d", "i-c, ii-d, iii-b, iv-a"],
+                correctAnswer: "i-c, ii-d, iii-b, iv-a",
                 userAnswer: null
             },
             {
-                question: "How can SCL and SCR be used to assess emotional arousal?",
-                options: ["Increased SCL and SCR indicate higher arousal.", "Decreased SCL and SCR indicate higher arousal.", "Increased SCL but decreased SCR indicate higher arousal.", "Decreased SCL but increased SCR indicate higher arousal."],
-                correctAnswer: "Increased SCL and SCR indicate higher arousal.",
+                question: "Raj, a senior executive, tasked with critical decision-making and strategic oversight, was recently asked to provide feedback on his role's effectiveness, which will eventually influence upcoming performance evaluations.",
+                options: ["A formal performance appraisal by superiors", "A peer review process for senior executive", "Self-assessment for role accountability", "360-degree feedback mechanism"],
+                correctAnswer: "Self-assessment for role accountability",
                 userAnswer: null
             },
             {
-                question: "What is the primary advantage of using the 10-20 system?",
-                options: ["It allows for easy comparison of EEG data across different studies.", "It reduces the number of electrodes needed for EEG recordings.", "It increases the spatial resolution of EEG recordings.", "It eliminates the need for precise anatomical measurements."],
-                correctAnswer: "It allows for easy comparison of EEG data across different studies.",
+                question: "The metamorphosis stage stands for:",
+                options: ["The process of organizational downsizing and restructuring", "New employee changes and adjusts to the job, work group, and organization", "The period when an employee leaves the organization", "The stage of learning where employees develop technical as well as professional skills"],
+                correctAnswer: "New employee changes and adjusts to the job, work group, and organization",
                 userAnswer: null
             },
             {
-                question: "Which frequency band is associated with deep sleep?",
-                options: ["Alpha", "Beta", "Delta", "Theta"],
-                correctAnswer: "Delta",
+                question: "Which of the following does not fall in the category of internal recruitment sources? i) Employee referrals ii) Internet iii) Job postings iv) Job portals v) College Recruiting vi) Rehiring vii) Recruitment agencies viii) Internal promotion",
+                options: ["i, ii, iii, iv, v, and vi", "ii, iii, iv, v and vii", "i, ii, iv, v, and vii", "ii, iv, v, and vii"],
+                correctAnswer: "i, ii, iv, v, and vii",
                 userAnswer: null
             },
             {
-                question: "In a multimodal setting, each modality is expected to provide similar information.",
-                options: ["True", "False"],
-                correctAnswer: "False",
+                question: "Which of the following is not false in the context of HRM? i. HRM helps in finding employees not performing at peak capacity. ii. HRM helps hire the wrong person for the job. iii. HRM is the source of competitive advantage by creating superior shareholder value. iv. HRM insignificantly affects organizational performance.",
+                options: ["i only", "i, ii, and iv", "i and iii", "All of the above"],
+                correctAnswer: "i and iii",
                 userAnswer: null
             },
             {
-                question: "What is a major challenge in early feature fusion of multimodal data?",
-                options: ["Data alignment and synchronization issues.", "Increased computational complexity.", "Selection of appropriate feature extraction techniques.", "Lack of standardized evaluation metrics."],
-                correctAnswer: "Data alignment and synchronization issues.",
+                question: "Which is the first step in the training process?",
+                options: ["Design", "Analyse", "Evaluate", "Develop"],
+                correctAnswer: "Analyse",
                 userAnswer: null
             },
             {
-                question: "Which fusion level is most suitable for modalities with different temporal resolutions? (Multiple correct)",
-                options: ["Early fusion", "Intermediate fusion", "Late fusion", "All have the same effect."],
-                correctAnswer: ["Intermediate fusion", "Late fusion"],
-                userAnswer: null,
-                multipleCorrect: true
-            },
-            {
-                question: "Which type of features does feature selection aim to eliminate?",
-                options: ["Descriptive features", "Relevant features", "Redundant features", "Interactive features"],
-                correctAnswer: "Redundant features",
+                question: "An assessment that determines the duties of specific jobs and the characteristics of the people who should be hired to do them is known as:",
+                options: ["Job Description", "Job Analysis", "Job Specification", "Job Determination"],
+                correctAnswer: "Job Analysis",
                 userAnswer: null
             },
             {
-                question: "Slow fusion eliminates the synchronization requirement while taking advantage of the correlations between the modalities.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "Match the following: Column I Column II i) Critical Incident a) Employees are rated on specific behaviours using a predefined scale ii) Written Essay b) Gives you exact reason for performance and non-performance iii) Graphical Rating Scale c) A method where a manager rates an employee's performance based on a scale of traits or characteristic iv) BARS d) A narrative describing an employee's strengths, weaknesses, past performances, potential, and suggestions for improvement",
+                options: ["i-b, ii-d, iii-c, iv-a", "i-d, ii-b, iii-a, iv-c", "i-d, ii-c, iii-b, iv-a", "i-b, ii-c, iii-d, iv-a"],
+                correctAnswer: "i-b, ii-d, iii-c, iv-a",
+                userAnswer: null
+            },
+            {
+                question: "Which of the following statements is true in the context of coordination? i) Coordination is the essence of management because it permeates all levels of management. ii) Coordination is a dynamic process. iii) Based on organizational structure, there are two types of coordination: Sequential and Reciprocal. iv) Early Start, Personnel Contract, Continuity, and Reciprocal Relationships are the coordination principles given by M. P. Follett.",
+                options: ["i, ii, and iii", "i, iii, and iv", "i, ii, and iv", "All of the above"],
+                correctAnswer: "i, ii, and iv",
                 userAnswer: null
             }
         ]
@@ -604,63 +613,63 @@ const quizData = {
         date: "Due on 2025-03-26, 23:59 IST",
         questions: [
             {
-                question: "What is the core concept of empathy?",
-                options: ["Recognizing and understanding the emotional states of others", "Feeling pity for others in distress", "Ignoring others' emotional states", "Controlling others' emotions"],
-                correctAnswer: "Recognizing and understanding the emotional states of others",
+                question: "Which stage in the Life Span Career Development model involves \"decide and advance\"?",
+                options: ["Growth Stage", "Exploration Stage", "Establishment Stage", "Maintenance Stage"],
+                correctAnswer: "Establishment Stage",
                 userAnswer: null
             },
             {
-                question: "The Uncanny Valley effect is most often observed when:",
-                options: ["A robot has human-like features but lacks certain human behaviors", "A robot mimics human emotions accurately", "A robot appears completely non-human", "A robot displays behaviors that are distinctly mechanical"],
-                correctAnswer: "A robot has human-like features but lacks certain human behaviors",
+                question: "A leading tech firm identified its top-performing employees, known as \"highflyers,\" with exceptional potential. It gave them fast-track leadership programs, mentorship opportunities, and cross-functional exposure to accelerate their career growth. Which career development strategy is being implemented in this scenario?",
+                options: ["Job Rotation", "Succession planning", "Talent pool development", "Performance appraisal"],
+                correctAnswer: "Talent pool development",
                 userAnswer: null
             },
             {
-                question: "Can empathy in robots and virtual agents be genuine?",
-                options: ["Yes, as long as the agent can process and respond to emotional signals", "No, empathy in agents is always simulated and not truly felt", "Yes, but only when humans are aware it is an agent", "No, empathy in robots is irrelevant for effective interaction"],
-                correctAnswer: "No, empathy in agents is always simulated and not truly felt",
+                question: "Which of the following is not a role of mentors in career development?",
+                options: ["The mentor challenges and stimulates the mentee intellectually", "Give financial support to mentees", "Offer sponsorship and visibility within the organization", "Guide mentees through difficult career decisions"],
+                correctAnswer: "Give financial support to mentees",
                 userAnswer: null
             },
             {
-                question: "What is the key focus of perspective-taking in the context of empathy?",
-                options: ["Understanding the emotional state of an individual based on their physiological cues", "Analyzing how the response will make the individual feel from their point of view", "Modifying the emotional state of an individual by regulating their feelings", "Ignoring the user's feelings to maintain an objective response"],
-                correctAnswer: "Analyzing how the response will make the individual feel from their point of view",
+                question: "Column I Column II i) Career Planning a) Establishment of individual career objectives based on an assessment of career goals, aspirations, performance, and potential. ii) Career Management b) Ongoing process of gaining knowledge and improving skills that will help an individual establish a career plan. iii)Career Development c) Continuous process that involves setting personal goals, developing strategies for achieving these goals, and revising the goals based on work and personal experiences.",
+                options: ["i-a, ii-c, iii-b", "i-b, ii-c, iii-a", "i-b, ii-a, iii-c", "i-a, ii-b, iii-c"],
+                correctAnswer: "i-a, ii-c, iii-b",
                 userAnswer: null
             },
             {
-                question: "What is the primary goal of empathy analysis in the context of artificial empathy?",
-                options: ["To predict the emotional state of an individual without understanding the context of the interaction", "To understand the emotional state of the user and evaluate whether the interaction is empathetic", "To generate empathetic responses in virtual agents based on physiological cues", "To analyze only the physiological cues without considering behavioral aspects"],
-                correctAnswer: "To understand the emotional state of the user and evaluate whether the interaction is empathetic",
+                question: "At which career stage does the career development intervention \"Job Pathing\" typically occur?",
+                options: ["Establishment Stage", "Advancement Stage", "Maintenance Stage", "Withdrawal Stage"],
+                correctAnswer: "Establishment Stage",
                 userAnswer: null
             },
             {
-                question: "The appearance of an embodied agent should be designed to match the specific characteristics of the target user to enhance empathy.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "Arrange the steps of the \"Career Planning and Development Cycle\" in the correct sequence:",
+                options: ["Explore Options – Get Focused – Know Yourself – Take Actions", "Explore Options – Know Yourself – Get Focused – Take Actions", "Get Focused – Explore Options – Know Yourself – Take Actions", "Know Yourself – Explore Options – Get Focused – Take Actions"],
+                correctAnswer: "Know Yourself – Explore Options – Get Focused – Take Actions",
                 userAnswer: null
             },
             {
-                question: "Which of the following best describes the role of lexical cues in empathy analysis?",
-                options: ["Lexical cues are physiological data used to assess emotional states", "Lexical cues are text-based data used to analyze the empathetic quality of interactions", "Lexical cues are only used in analyzing emotional states, not empathy", "Lexical cues focus on the visual and audio cues of the interaction"],
-                correctAnswer: "Lexical cues are text-based data used to analyze the empathetic quality of interactions",
+                question: "Which of the following describes McClelland's Need for Achievement Theory in the best way?",
+                options: ["A strong motivation to succeed and to be at the top", "Desire for affiliation and forming close relationships", "Desire for power and control over others", "Desire for stability and security"],
+                correctAnswer: "A strong motivation to succeed and to be at the top",
                 userAnswer: null
             },
             {
-                question: "What is one of the mediating factors that can affect the empathetic response of an observer?",
-                options: ["The agent's physical location", "The mood of the observer", "The agent's programming language", "The time of day"],
-                correctAnswer: "The mood of the observer",
+                question: "A & M Multi Ltd organizes a five-day program where employees participate in role playing, exercise, group discussions, and simulated business scenarios to evaluate their leadership, communication and decision-making skills for future managerial roles. What method of employee evaluation is described here?",
+                options: ["360-Degree Feedback", "Assessment Centre", "Personality Test", "Job Shadowing"],
+                correctAnswer: "Assessment Centre",
                 userAnswer: null
             },
             {
-                question: "What was the result of providing empathetic feedback in the virtual interview scenario?",
-                options: ["It increased the interview stress level", "It had no effect on the interview stress level", "It reduced the interview stress level", "It caused the interview to be abandoned"],
-                correctAnswer: "It reduced the interview stress level",
+                question: "Which of the following statements is true? i) In the Harmonizing Approach, Frank Parson gave an important theory emphasizing the fit of the person-environment. ii) Structural Career Development Theories emphasize the influence of the environment on career choice. iii) Developmental Career Development Theories emphasize the importance of the development of self-concept. iv) Maslow, in 1943, stated that individuals must satisfy lower-level needs before progressing on to meet higher-level growth needs.",
+                options: ["iv only", "i, ii, and iii", "ii, iii, and iv", "All of the above"],
+                correctAnswer: "ii, iii, and iv",
                 userAnswer: null
             },
             {
-                question: "The emotional state of the user is irrelevant when designing an embodied agent for a specific task.",
-                options: ["True", "False"],
-                correctAnswer: "False",
+                question: "Match the following: Column I Column II i) Identity Diffusion a) The status in which an adolescent seems willing to commit to a particular role but has not yet explored alternatives. ii) Identity Foreclosure b) The status in which adolescents actively explore different roles and possibilities but have not yet committed. iii) Identity Moratorium c) The status in which the adolescent has not yet made commitments; they are aimless or lack direction. iv) Identity Achievement d) The status in which the adolescent has explored different roles and committed to a particular role.",
+                options: ["i-a, ii-b, iii-c, iv-d", "i-c, ii-d, iii-a, iv-b", "i-a, ii-b, iii-d, iv-c", "i-c, ii-a, iii-b, iv-d"],
+                correctAnswer: "i-c, ii-a, iii-b, iv-d",
                 userAnswer: null
             }
         ]
