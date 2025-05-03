@@ -56,9 +56,19 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div class="audio-player-container">
                     <audio id="lecture-audio" src="assets/week1-audio.wav" preload="metadata"></audio>
                     <div class="audio-controls">
+                        <button id="skip-backward-btn" class="audio-skip-btn" aria-label="Skip backward 10 seconds">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M11 18V6l-8.5 6 8.5 6zm.5-6l8.5 6V6l-8.5 6z"/>
+                            </svg>
+                        </button>
                         <button id="play-pause-btn" class="audio-play-pause" aria-label="Play audio">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <button id="skip-forward-btn" class="audio-skip-btn" aria-label="Skip forward 10 seconds">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M4 18l8.5-6L4 6v12zm9-12v12l8.5-6L13 6z"/>
                             </svg>
                         </button>
                         <button id="speed-btn" class="audio-speed-btn">1.0x</button>
@@ -924,6 +934,8 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!audio) return;
 
         const playPauseBtn = document.getElementById('play-pause-btn');
+        const skipBackwardBtn = document.getElementById('skip-backward-btn');
+        const skipForwardBtn = document.getElementById('skip-forward-btn');
         const speedBtn = document.getElementById('speed-btn');
         const progress = document.querySelector('.audio-progress');
         const progressFilled = document.querySelector('.audio-progress-filled');
@@ -941,6 +953,16 @@ document.addEventListener('DOMContentLoaded', function() {
                 playPauseBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
             }
         }
+
+        // Skip backward 10 seconds
+        skipBackwardBtn.addEventListener('click', function() {
+            audio.currentTime = Math.max(0, audio.currentTime - 10);
+        });
+
+        // Skip forward 10 seconds
+        skipForwardBtn.addEventListener('click', function() {
+            audio.currentTime = Math.min(audio.duration, audio.currentTime + 10);
+        });
 
         // Speed control functionality - cycle through speeds
         const speeds = [1.0, 1.25, 1.5, 1.75, 2.0];
