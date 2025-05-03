@@ -53,6 +53,22 @@ document.addEventListener('DOMContentLoaded', function() {
             if (weekNumber === '1') {
                 notesTitle = 'Week 1 Lecture Notes';
                 notesContent = `
+                <div class="audio-player-container">
+                    <audio id="lecture-audio" src="assets/week1-audio.wav" preload="metadata"></audio>
+                    <div class="audio-controls">
+                        <button id="play-pause-btn" class="audio-play-pause" aria-label="Play audio">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                        <button id="speed-btn" class="audio-speed-btn">1.0x</button>
+                    </div>
+                    <div class="audio-progress">
+                        <div class="audio-progress-filled"></div>
+                    </div>
+                    <div class="audio-time">0:00 / 0:00</div>
+                </div>
+
                 <h2>Week 1: Principles of Management - Key Notes</h2>
 
                 <h3>1. What is Management?</h3>
@@ -895,6 +911,85 @@ document.addEventListener('DOMContentLoaded', function() {
         // Hide week selection and show learning content
         weekSelection.classList.add('hidden');
         learningContent.classList.remove('hidden');
+
+        // Initialize audio player if it's Week 1
+        if (weekNumber === '1') {
+            initAudioPlayer();
+        }
+    }
+
+    // Function to initialize the audio player
+    function initAudioPlayer() {
+        const audio = document.getElementById('lecture-audio');
+        if (!audio) return;
+
+        const playPauseBtn = document.getElementById('play-pause-btn');
+        const speedBtn = document.getElementById('speed-btn');
+        const progress = document.querySelector('.audio-progress');
+        const progressFilled = document.querySelector('.audio-progress-filled');
+        const timeDisplay = document.querySelector('.audio-time');
+
+        // Play/Pause functionality
+        playPauseBtn.addEventListener('click', togglePlayPause);
+
+        function togglePlayPause() {
+            if (audio.paused) {
+                audio.play();
+                playPauseBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>';
+            } else {
+                audio.pause();
+                playPauseBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+            }
+        }
+
+        // Speed control functionality - cycle through speeds
+        const speeds = [1.0, 1.25, 1.5, 1.75, 2.0];
+        let currentSpeedIndex = 0;
+
+        speedBtn.addEventListener('click', function() {
+            // Move to next speed in the cycle
+            currentSpeedIndex = (currentSpeedIndex + 1) % speeds.length;
+            const newSpeed = speeds[currentSpeedIndex];
+
+            // Update audio playback rate
+            audio.playbackRate = newSpeed;
+
+            // Update button text
+            speedBtn.textContent = newSpeed.toFixed(2).replace(/\.00$/, '') + 'x';
+        });
+
+        // Update progress bar
+        audio.addEventListener('timeupdate', updateProgress);
+
+        function updateProgress() {
+            const percent = (audio.currentTime / audio.duration) * 100;
+            progressFilled.style.width = `${percent}%`;
+
+            // Update time display
+            const currentMinutes = Math.floor(audio.currentTime / 60);
+            const currentSeconds = Math.floor(audio.currentTime % 60);
+            const durationMinutes = Math.floor(audio.duration / 60) || 0;
+            const durationSeconds = Math.floor(audio.duration % 60) || 0;
+
+            timeDisplay.textContent = `${currentMinutes}:${currentSeconds < 10 ? '0' : ''}${currentSeconds} / ${durationMinutes}:${durationSeconds < 10 ? '0' : ''}${durationSeconds}`;
+        }
+
+        // Click on progress bar to seek
+        progress.addEventListener('click', function(e) {
+            const progressRect = this.getBoundingClientRect();
+            const percent = (e.clientX - progressRect.left) / progressRect.width;
+            audio.currentTime = percent * audio.duration;
+        });
+
+        // Handle audio end
+        audio.addEventListener('ended', function() {
+            playPauseBtn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>';
+        });
+
+        // Load metadata to display duration
+        audio.addEventListener('loadedmetadata', function() {
+            updateProgress();
+        });
     }
 
     // Function to start quiz for a specific week
