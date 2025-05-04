@@ -679,64 +679,63 @@ const quizData = {
         date: "Due on 2025-04-02, 23:59 IST",
         questions: [
             {
-                question: "Learners' experiences with affective learning technologies involve both emotional responses and learning outcomes",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "Match the following:\n      Column I\t                               Column II\ni) Participating Style\t          a) Give instructions\nii) Selling Style\t                  b) Turn over decisions\niii) Delegating Style\t                  c) Share ideas\niv) Telling Style\t                  d) Explain decisions",
+                options: ["i-a, ii-d, iii-b, iv-c", "i-a, ii-b, iii-d, iv-c", "i-c, ii-d, iii-b, iv-a", "i-b, ii-d, iii-c, iv-a"],
+                correctAnswer: "i-c, ii-d, iii-b, iv-a",
                 userAnswer: null
             },
             {
-                question: "How does GazeTutor use eye-tracking data to improve learning?",
-                options: ["By identifying when students are struggling with a concept.", "By predicting students' future performance.", "By adapting the difficulty level of the tutoring content.", "By providing real-time feedback on students' attention and engagement."],
-                correctAnswer: "By providing real-time feedback on students' attention and engagement.",
+                question: "\"University of Michigan Study\" is a _________ theory.",
+                options: ["Trait Theory", "Behavioural Theory", "Contemporary Theory", "None of these"],
+                correctAnswer: "Behavioural Theory",
                 userAnswer: null
             },
             {
-                question: "A machine that can anticipate future needs and adjust its behavior accordingly is at which level of adaptation? (Multiple correct)",
-                options: ["Level 0", "Level 1", "Level 2", "Level 3"],
-                correctAnswer: ["Level 2", "Level 3"],
-                userAnswer: null,
-                multipleCorrect: true
-            },
-            {
-                question: "Camera can be used to monitor the heart rate of the user.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "What does \"Initiating Structure\" in leadership mean?",
+                options: ["The degree to which a leader fosters positive relationships and morale within the team", "The ability of a leader to adapt to changing circumstances and inspire creativity", "The extent to which a leader defines roles, responsibilities, and expectations for team members", "The leaders focus on maintaining harmony and avoiding conflict in a team"],
+                correctAnswer: "The extent to which a leader defines roles, responsibilities, and expectations for team members",
                 userAnswer: null
             },
             {
-                question: "What is empathy in the context of affective computing?",
-                options: ["The ability of a machine to understand and respond to human emotions.", "The ability of a machine to perform tasks independently.", "The ability of a machine to learn from experience.", "The ability of a machine to process and analyze large amounts of data."],
-                correctAnswer: "The ability of a machine to understand and respond to human emotions.",
+                question: "Which of the following leadership models focuses on followers' \"readiness\"?",
+                options: ["Path-Goal Theory", "Situational Leadership Model", "Leader-Member Exchange (LMX) Theory", "Fielder's Contingency Model"],
+                correctAnswer: "Situational Leadership Model",
                 userAnswer: null
             },
             {
-                question: "Tendency to provide human characteristics to non-lifelike artifacts is called as",
-                options: ["Polymorphism", "Anthropomorphism", "Skeuomorphism", "Neumorphism"],
-                correctAnswer: "Anthropomorphism",
+                question: "Match the following:\nColumn I\t        Column II\ni) 1:1\ta) Team Management\nii) 5:5\tb) Task Management\niii) 9:9\tc) Impoverished Management\niv) 1:9\td) Middle of the Road\nv) 9:1\te) Country-club Management",
+                options: ["i-c, ii-d, iii-a, iv-b, v-e", "i-a, ii-d, iii-c, iv-b, v-e", "i-a, ii-b, iii-d, iv-e, v-c", "i-c, ii-d, iii-a, iv-e, v-b"],
+                correctAnswer: "i-c, ii-d, iii-a, iv-e, v-b",
                 userAnswer: null
             },
             {
-                question: "Parallel empathy is characterized by:",
-                options: ["A strong emotional response to another person's feelings.", "A detached and objective perspective on another person's emotions.", "The ability to understand and share another person's feelings without being overwhelmed.", "A tendency to avoid emotional situations."],
-                correctAnswer: "The ability to understand and share another person's feelings without being overwhelmed.",
+                question: "LPC in the context of leadership stands for:",
+                options: ["Least Preferred Co-worker", "Leadership Performance Criteria", "Leadership Process Cycle", "Leader Personality Characteristics"],
+                correctAnswer: "Least Preferred Co-worker",
                 userAnswer: null
             },
             {
-                question: "User feedback ratings can be a metric for evaluating affective agents.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "In the Path-Goal model of leadership, which of the following is not a subordinate contingency factor?",
+                options: ["Perceived Ability", "Experience", "Work Group", "Locus of Control"],
+                correctAnswer: "Work Group",
                 userAnswer: null
             },
             {
-                question: "Which of the following strategies can help to reduce negative affective states in learners?",
-                options: ["Increasing the difficulty of tasks.", "Providing immediate feedback.", "Creating a competitive learning environment.", "Ignoring learner emotions."],
-                correctAnswer: "Providing immediate feedback.",
+                question: "What is the focus of \"Intellectual Stimulation\" in transformational leadership?",
+                options: ["Promoting organizational loyalty and working for the long-term goals of the organization", "Encouraging subordinates to develop creativity and problem-solving skills", "Ensuring strict adherence to guidelines", "Enhancing emotional intelligence"],
+                correctAnswer: "Encouraging subordinates to develop creativity and problem-solving skills",
                 userAnswer: null
             },
             {
-                question: "Cognitive empathy involves perceiving the emotions of the target in a logical manner.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "What does the term \"protégés\" mean?",
+                options: ["Individuals who act as mentors or advisors to others", "People who work independently without any external influence", "Individuals who receive support or guidance from a mentor", "Experienced professionals leading teams in organizations"],
+                correctAnswer: "Individuals who receive support or guidance from a mentor",
+                userAnswer: null
+            },
+            {
+                question: "What is a key issue associated with the dark side of charismatic leadership?",
+                options: ["Over-reliance on team consensus", "Lack of vision and communication", "Excessive delegation without accountability", "Leaders prioritize their self-interest over organizational goals."],
+                correctAnswer: "Leaders prioritize their self-interest over organizational goals.",
                 userAnswer: null
             }
         ]
@@ -746,63 +745,63 @@ const quizData = {
         date: "Due on 2025-04-09, 23:59 IST",
         questions: [
             {
-                question: "A virtual assistant takes input in the form of text messages only.",
-                options: ["True", "False"],
-                correctAnswer: "False",
+                question: "Which of the following is not a part of active listening in communication?",
+                options: ["Sensing", "Interrupting", "Responding", "Evaluation"],
+                correctAnswer: "Interrupting",
                 userAnswer: null
             },
             {
-                question: "Which of the following is NOT a part of the process for creating a virtual assistant as described in the lecture?",
-                options: ["Wake word detection", "Automatic Speech Recognition (ASR)", "Emotion detection in the speech", "Data encryption for privacy"],
-                correctAnswer: "Data encryption for privacy",
+                question: "Which of the following best describes the relationship between Courtesy and Consideration?",
+                options: ["Both focus on avoiding technical errors", "Both focus on avoiding offensive things and respecting audience sentiment", "Both focus on delivering information with artistic and engaging expression", "Both focus on using humour to maintain attention"],
+                correctAnswer: "Both focus on avoiding offensive things and respecting audience sentiment",
                 userAnswer: null
             },
             {
-                question: "It is acceptable to anthropomorphize emotional virtual agents as long as they provide useful emotional support to users.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "The manager shares an important project update in a company meeting. However, some team members inadvertently omit key details when relying on the information to others, leading to confusion and delays in execution. This is an example of:",
+                options: ["Selective listening", "Information overload", "Filtration of information", "Non-verbal communication barrier"],
+                correctAnswer: "Filtration of information",
                 userAnswer: null
             },
             {
-                question: "An emotionally intelligent virtual assistant can help improve communication and reduce stress in the workplace by recognizing emotional cues from employees.",
-                options: ["True", "False"],
-                correctAnswer: "True",
+                question: "Which of the following is not one of the 4 S's of communication?",
+                options: ["Sincerity", "Simplicity", "Strength", "Strategy"],
+                correctAnswer: "Strategy",
                 userAnswer: null
             },
             {
-                question: "In which domain can an emotionally intelligent virtual assistant help provide real-time emotional support and coping strategies?",
-                options: ["Healthcare", "Customer service", "Mental health and therapy", "Entertainment"],
-                correctAnswer: "Mental health and therapy",
+                question: "In Johari Window, which quadrant represents information that is not known to oneself but known to others?",
+                options: ["Arena", "Concealed", "Blind", "Unknown"],
+                correctAnswer: "Blind",
                 userAnswer: null
             },
             {
-                question: "What is the main goal of using an emotionally intelligent virtual assistant in education?",
-                options: ["To replace teachers", "To monitor students' grades", "To identify when students need additional support and provide targeted feedback", "To conduct exams"],
-                correctAnswer: "To identify when students need additional support and provide targeted feedback",
+                question: "What is the first step in the Shannon-Weaver communication model?",
+                options: ["Encoding the message", "Sending the message", "Receiving the message", "Generating the feedback"],
+                correctAnswer: "Sending the message",
                 userAnswer: null
             },
             {
-                question: "The first step in the process of building an emotionally intelligent virtual assistant is to identify the language spoken by the user.",
-                options: ["True", "False"],
-                correctAnswer: "False",
+                question: "Which of the following best exemplifies a personal barrier in communication?",
+                options: ["Listening issues caused by external distractions", "Cultural differences influencing the interpretation of words", "Incorporation of technical jargon that confuses the receiver", "Inconsistencies b/w verbal and non-verbal communication"],
+                correctAnswer: "Listening issues caused by external distractions",
                 userAnswer: null
             },
             {
-                question: "What is the role of the \"context\" in an emotionally intelligent virtual assistant?",
-                options: ["To recognize the user's emotion at all times", "To understand the user's preferences and history for personalized responses", "To determine the user's intent regardless of their emotional state", "To simply follow the user's spoken instructions without emotion or history"],
-                correctAnswer: "To understand the user's preferences and history for personalized responses",
+                question: "Why are euphemisms commonly used in communication?",
+                options: ["To make the communication more formal and professional", "To make the message more direct and clearer", "To discuss sensitive or uncomfortable topics tactfully", "To increase the complexity of the message"],
+                correctAnswer: "To discuss sensitive or uncomfortable topics tactfully",
                 userAnswer: null
             },
             {
-                question: "What is the primary ethical concern related to privacy when developing emotionally intelligent virtual agents?",
-                options: ["The agent may not be able to collect enough data.", "The agent may collect personal data without user consent.", "The agent may not be able to process data accurately.", "The agent may share personal data only with medical professionals."],
-                correctAnswer: "The agent may collect personal data without user consent.",
+                question: "__________ is a method that helps two persons communicate and behave on the job maturely by understanding each other's motives.",
+                options: ["Life positions", "Johari window", "Self-perception", "Transactional analysis"],
+                correctAnswer: "Transactional analysis",
                 userAnswer: null
             },
             {
-                question: "How can emotional virtual agents help avoid bias in their responses to users?",
-                options: ["By using data from only one ethnic group.", "By ensuring the data used for training is diverse and representative.", "By focusing on only one language group.", "By ignoring cultural differences."],
-                correctAnswer: "By ensuring the data used for training is diverse and representative.",
+                question: "Which of the following is an example of a high-context culture?",
+                options: ["Japan", "Germany", "United States", "Switzerland"],
+                correctAnswer: "Japan",
                 userAnswer: null
             }
         ]
@@ -812,63 +811,63 @@ const quizData = {
         date: "Due on 2025-04-16, 23:59 IST",
         questions: [
             {
-                question: "Privacy concerns in affective computing arise from:",
-                options: ["The collection and analysis of personal data", "The potential for misuse of emotional information", "The lack of transparency in AI decision-making", "None of the above."],
-                correctAnswer: "The collection and analysis of personal data",
+                question: "What is the primary focus of Peter Senge's \"The Fifth Discipline\"?",
+                options: ["Financial Management", "Marketing Strategies", "To gain competitive advantage", "Organizational Learning"],
+                correctAnswer: "Organizational Learning",
                 userAnswer: null
             },
             {
-                question: "Which of the following is not a potential Ethical Consideration that need not to be addressed?",
-                options: ["Emotional Manipulation", "Privacy", "Emotional Dependency", "System accuracy"],
-                correctAnswer: "System accuracy",
+                question: "A strategy of entering a new environment early is known as ____.",
+                options: ["h-strategy", "k-strategy", "r-strategy", "z-strategy"],
+                correctAnswer: "r-strategy",
                 userAnswer: null
             },
             {
-                question: "Which of the following has a high level of privacy intrusion?",
-                options: ["Audio jack", "WiFi", "Camera", "Bluetooth"],
-                correctAnswer: "Camera",
+                question: "If the nature of change is described as a \"big bang\" and the end result is \"transformation,\" what type of change is being referred to?",
+                options: ["Evolution", "Revolution", "Adaptation", "Reconstruction"],
+                correctAnswer: "Revolution",
                 userAnswer: null
             },
             {
-                question: "All mobile sensors capture the least amount of sensitive data.",
-                options: ["True", "False"],
-                correctAnswer: "False",
+                question: "Match the following: \n   Column I                                                  \tColumn II\ni) TQM\t                        a) Employees who have honed the skills to perform any of the tasks\n                                            necessary for assembling a range of finished goods \nii) Quality Circles\t        b) The process of streamlining the organizational hierarchy and\n                                            laying off managers and workers to reduce bureaucratic costs\niii)Flexible Workers\t        c) An ongoing and constant effort by all of an organization's functions\n                                            to find new ways to improve the quality of the organization's goods and services\niv) Downsizing\t                d) A group of workers who meet regularly to discuss the way work\n                                            is performed in order to find new ways to increase performance",
+                options: ["i-a, ii-b, iii-c, iv-d", "i-a, ii-c, iii-b, iv-d", "i-b, ii-c, iii-d, iv-a", "i-c, ii-d, iii-a, iv-b"],
+                correctAnswer: "i-c, ii-d, iii-a, iv-b",
                 userAnswer: null
             },
             {
-                question: "Which of the following sensing strategies is written wrongly in order of their privacy invasiveness, in ascending order?",
-                options: ["Microphone > WiFi> Accelerometer", "GPS > Bluetooth > Screen Touch", "WiFi > Gyroscope > Calls", "Calls > Apps > Gyroscope"],
-                correctAnswer: "WiFi > Gyroscope > Calls",
+                question: "_______ is the study of how organizations function and how they affect and are affected by the environment in which they operate.",
+                options: ["Organizational Theory", "Organizational Structure", "Organizational Culture", "Organizational Design"],
+                correctAnswer: "Organizational Theory",
                 userAnswer: null
             },
             {
-                question: "What is the primary goal of anticipatory mobile computing?",
-                options: ["To predict user needs and proactively provide services.", "To optimize battery life on mobile devices.", "To enhance the security of mobile devices.", "To increase the processing power of mobile devices."],
-                correctAnswer: "To predict user needs and proactively provide services.",
+                question: "Which of the following is the correct sequence of stages in Weitzel and Jonsson's 5-Stage Decline Model?",
+                options: ["Crisis-Blinded-Inaction-Faulty Action-Dissolution", "Faulty Action-Crisis-Blinded-Inaction-Dissolution", "Inaction-Crisis-Blinded-Faulty Action-Dissolution", "Blinded-Inaction-Faulty Action-Crisis-Dissolution"],
+                correctAnswer: "Blinded-Inaction-Faulty Action-Crisis-Dissolution",
                 userAnswer: null
             },
             {
-                question: "From an ethics perspective, what is a significant concern regarding affect-sensing apps in relation to emotional dependency?",
-                options: ["User engagement", "Privacy intrusion", "Emotional manipulation", "User addiction"],
-                correctAnswer: "User addiction",
+                question: "In a multinational organization, a team experiences escalating conflicts due to cultural misunderstandings, leading to reduced productivity. What OD intervention needs to be introduced?",
+                options: ["Sensitivity Training", "Counselling", "Team Building", "Process Consultation"],
+                correctAnswer: "Sensitivity Training",
                 userAnswer: null
             },
             {
-                question: "What is a potential ethical concern related to facial expression recognition?",
-                options: ["Privacy violations", "Bias in recognition systems", "Misinterpretation of emotions", "All of the above"],
-                correctAnswer: "All of the above",
+                question: "In Nadler and Tushman's Model, what do \"second-order change\" and \"proactive nature\" refer to?",
+                options: ["Fine Tuning", "Frame Bending", "Adoption", "Frame Breaking"],
+                correctAnswer: "Frame Bending",
                 userAnswer: null
             },
             {
-                question: "It is possible to completely anonymize a user's personal information using algorithms.",
-                options: ["True", "False"],
-                correctAnswer: "False",
+                question: "Which of the following is not a symptom of groupthink?",
+                options: ["Illusion of invulnerability", "Self-censorship", "Pressure on dissenters to conform", "Independent decision-making"],
+                correctAnswer: "Independent decision-making",
                 userAnswer: null
             },
             {
-                question: "Who should be involved in shaping the ethical guidelines for the development of affect-aware machines?",
-                options: ["Engineers and developers only.", "Ethicists and philosophers only.", "Users and stakeholders only.", "A combination of engineers, ethicists, users, and other relevant stakeholders."],
-                correctAnswer: "A combination of engineers, ethicists, users, and other relevant stakeholders.",
+                question: "What is the first step to implement change?",
+                options: ["Create a vision", "Form a coalition", "Establish a sense of urgency", "Reinforce the change"],
+                correctAnswer: "Establish a sense of urgency",
                 userAnswer: null
             }
         ]
